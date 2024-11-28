@@ -26,10 +26,10 @@ export default {
       },
 
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        // Define your custom gradients if needed
+          'yellow-gradient': 'linear-gradient(to bottom, #FAAB02 0%, #539D43 100%)',
+          'green-gradient': 'linear-gradient(to bottom, #539D43 0%, #99cc00 100%)',
+         
+       
       },
     },
 

@@ -13,7 +13,7 @@ const Button: React.FC<ButtonProps> = ({ buttonText }) => {
 
     <span className="absolute bottom-0 left-0 hidden w-10 h-20 transition-all duration-100 ease-out transform -translate-x-8 translate-y-10 bg-lightgreen -rotate-12"></span>
     <span className="absolute bottom-0 right-0 hidden w-10 h-20 transition-all duration-100 ease-out transform translate-x-10 translate-y-8 bg-green -rotate-12"></span>
-    <span className="relative">{buttonText}</span>
+    <span className="relative text-lg font-semibold">{buttonText}</span>
 </a>
     </div>
   )
