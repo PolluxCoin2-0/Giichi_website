@@ -31,6 +31,15 @@ export default {
          
        
       },
+      animation: {
+        marquee: 'scroll 20s linear infinite', // Animation duration and speed
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' }, // Start position
+          '100%': { transform: 'translateX(-100%)' }, // End position, moves entire width
+        },
+      },
     },
 
  

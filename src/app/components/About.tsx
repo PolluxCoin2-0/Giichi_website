@@ -2,7 +2,7 @@ import React from "react";
 import Counter from "./reusableComp/Counter";
 const About = () => {
   return (
-    <div className="flex flex-col pt-40">
+    <div className="flex flex-col pt-40 px-64">
       <p className="text-2xl font-bold text-white">KNOW US </p>
       <p className="text-6xl font-bold text-white mt-4 leading-snug">Reliable <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">Blockchain </span><br/>Developement Company </p>
       <p className="text-lg font-medium text-white mt-6">

@@ -3,9 +3,9 @@ import Button from "../../../src/app/components/Button";
 
 const HomePage = () => {
   return (
-    <div className="pt-28 relative">
+    <div className="pt-28 px-64 relative">
       <div
-        className="absolute top-[22%] left-0 w-[1400px] h-[120px] bg-yellow-gradient blur-3xl rounded-[50%] opacity-60 animate-spotlight-left"
+        className="absolute -top-[10%] left-0 w-[2000px] h-[120px] bg-yellow-gradient blur-3xl rounded-[50%] opacity-60 animate-spotlight-left"
         style={{
           transform: "translate(-50%, -50%) rotate(-130deg)",
         }}

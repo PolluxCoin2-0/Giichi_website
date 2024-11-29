@@ -26,7 +26,7 @@ const Navbar = () => {
         <p className="text-md font-medium text-white">Web3 Solutions</p>
        
        </div>
-     <div className="flex flex-row items-center space-x-6 border-[1px] rounded-full p-3 pl-8 pr-8 "
+     <div className="flex flex-row items-center space-x-6 border-[1px] rounded-full p-3 pl-6 pr-4 "
          style={{
           boxShadow:"0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4) "}}>
         <p className="text-md font-medium text-white ">Work With Us</p>
