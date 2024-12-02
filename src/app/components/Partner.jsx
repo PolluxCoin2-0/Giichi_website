@@ -15,7 +15,6 @@ const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
 const Partner = () => {
   const sliderRef = useRef(null); // Ref with no types specified for JSX
-
   const settings = {
     dots: true,
     autoplay: true, // Enable autoplay
