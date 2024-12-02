@@ -3,7 +3,7 @@ import Button from "../../../src/app/components/Button";
 
 const HomePage = () => {
   return (
-    <div className="pt-28 px-64 relative">
+    <div className="pt-28 px-4 md:px-64 relative">
       <div
         className="absolute -top-[10%] left-0 w-[2000px] h-[120px] bg-yellow-gradient blur-3xl rounded-[50%] opacity-60 animate-spotlight-left"
         style={{
@@ -12,23 +12,18 @@ const HomePage = () => {
       ></div>
 
       {/* intro */}
-      <div className="flex flex-col space-y-10 ">
-        <p className="text-7xl font-bold leading-tight text-white">
+      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col space-y-4 md:space-y-10 ">
+        <p className="text-2xl md:text-7xl font-bold md:leading-tight text-white">
           Unleash the power of <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> WEB3 Industry</span>  with <br />
           professionals
         </p>
-        <p className="text-lg font-medium text-white">
-          We are experienced professionals who understand that
-          <br />
-          technology is changing, and are true partners who care
-          <br />
-          about your success. Our team provides a consultative
-          <br />
-          approach on emerging technology.
+        <p className="text-sm md:text-lg font-medium text-white w-full md:w-[30%]">
+          We are experienced professionals who understand that technology is changing, and are true partners who care about your success. Our team provides a consultative approach on emerging technology.
         </p>
 
-        <div className="flex flex-row space-x-16 pt-10">
+        <div className="flex flex-row space-x-16 pt-2 md:pt-10">
           <div>
             <Button buttonText="Our Services" />
           </div>
@@ -40,6 +35,7 @@ const HomePage = () => {
 
       {/* image */}
       <div></div>
+      </div>
     </div>
   );
 };

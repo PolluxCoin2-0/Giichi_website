@@ -30,7 +30,7 @@ const Navbar = () => {
          style={{
           boxShadow:"0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4) "}}>
         <p className="text-md font-medium text-white ">Work With Us</p>
-        <p className="bg-green rounded-full p-1"><MdOutlineArrowForward size={24}/></p>
+        <p className="bg-green-gradient rounded-full p-1"><MdOutlineArrowForward size={24}/></p>
        </div>
 
      {/* <div className="flex flex-row space-x-4 items-center">

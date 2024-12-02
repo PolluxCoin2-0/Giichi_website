@@ -77,3 +77,7 @@
 .flip-container:hover .flip-image {
   transform: rotateY(180deg); /* Flips the image on hover */
 }
+
+.animated-icon {
+  animation: scaleUpDown 3s ease-in-out infinite;
+}
