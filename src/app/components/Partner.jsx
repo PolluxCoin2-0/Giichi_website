@@ -10,18 +10,12 @@ import img2 from "../../../public/assests/download (2).png";
 import img3 from "../../../public/assests/download.png";
 import img4 from "../../../public/assests/images.png";
 
-
-
 // Dynamically import React Slick with SSR disabled
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
-// Define the type for the slick slider ref
-interface SliderRef {
-  slickPrev: () => void;
-  slickNext: () => void;
-}
+
 const Partner = () => {
-  const sliderRef = useRef<SliderRef | null>(null);
-  
+  const sliderRef = useRef(null); // Ref with no types specified for JSX
+
   const settings = {
     dots: true,
     autoplay: true, // Enable autoplay
@@ -88,8 +82,6 @@ const Partner = () => {
           </button>
         </div>
       </div>
-
-    
     </div>
   );
 };
