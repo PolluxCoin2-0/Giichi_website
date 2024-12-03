@@ -74,10 +74,10 @@ const Blog: React.FC = () => {
   };
 
   return (
-    <div className="mt-8 md:mt-16 px-4 md:px-64">
+    <div className="mt-8 md:mt-16 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
       <div className="flex flex-col md:flex-row justify-between item-start md:items-center">
         <div>
-          <p className="text-2xl md:text-5xl font-bold text-white md:leading-snug ">
+          <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-snug ">
             Insights from
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
               {" "}
@@ -89,7 +89,7 @@ const Blog: React.FC = () => {
         </div>
 
         <div
-          className="flex flex-row items-center space-x-6 border-[1px] rounded-full p-2 md:p-3 pl-8 pr-4 mt-4 max-w-fit"
+          className="flex flex-row items-center space-x-6 border-[1px] rounded-full p-2 lg:p-3 pl-8 pr-4 mt-4 max-w-fit"
           style={{
             boxShadow:
               "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4) ",
@@ -103,7 +103,7 @@ const Blog: React.FC = () => {
       </div>
       
       <div className="mt-0 ">
-        <div className="bg-black mt-4 md:mt-14 flex flex-row justify-center items-center relative pt-0">
+        <div className="bg-black mt-4 md:mt-8 lg:mt-14 flex flex-row justify-center items-center relative pt-0">
           {/* Set a max-width for the slider to ensure only 3 items are shown */}
           <div className="w-full max-w-8xl ">
             <Slider {...settings}>
@@ -122,7 +122,7 @@ const Blog: React.FC = () => {
                     <p className="text-left pl-4 text-[#adaaaa] pt-2 text-lg font-medium">
                       18 September 2024
                     </p>
-                    <p className="text-left pl-4 text-[#ffffff] pt-2 pb-8 leading-7 px-4 text-2xl font-bold">
+                    <p className="text-left pl-4 text-[#ffffff] pt-2 pb-8 leading-7 px-4 text-lg xl:text-2xl font-bold">
                       What is Web Development?
                     </p>
                   </div>

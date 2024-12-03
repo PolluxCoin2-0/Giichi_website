@@ -54,7 +54,7 @@ const Partner = () => {
 
   return (
     <div className="mt-20 pb-12 overflow-hidden ">
-      <p className="text-2xl md:text-6xl font-bold text-white md:leading-tight px-4 md:px-64">
+      <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white md:leading-tight px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
           Partnerships
         </span>{" "}
@@ -64,7 +64,7 @@ const Partner = () => {
         <div className="slider-container">
           <Slider ref={sliderRef} {...settings}>
             {[img1, img2, img3, img4, img1, img2, img3].map((img, index) => (
-              <div key={index} className="flip-container md:px-0 px-2">
+              <div key={index} className="flip-container md:px-2 px-2">
                 <Image
                   src={img}
                   alt={`Image ${index + 1}`}

@@ -18,17 +18,17 @@ const Consultation = () => {
   };
 
   return (
-    <div className="px-4 md:px-64 mt-12 pb-20">
+    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 mt-12 pb-20">
       <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-12 border-[1px] border-lightblack rounded-2xl p-4 md:p-10 pt-10 w-full">
         <div className="w-full md:w-[60%]">
-          <p className="text-2xl md:text-5xl font-bold text-white md:leading-snug">
+          <p className="text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-snug">
             Schedule Your <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
               Blockchain{" "}
             </span>
             Consultation
           </p>
-          <p className="pt-5 text-gray text-sm md:text-lg ">
+          <p className="pt-5 text-gray text-sm lg:text-lg ">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
             commodi placeat soluta omnis quam eveniet laudantium ullam iste,
             iure quod. Qui eius voluptate autem odio accusantium, quidem impedit
@@ -44,7 +44,7 @@ const Consultation = () => {
              ${isQuoteOpen ? "z-0" : "z-10"}`}
             onClick={handleButtonClick}
           >
-            <p className=" text-white text-sm md:text-lg font-semibold text-nowrap">
+            <p className=" text-white text-sm lg:text-lg font-semibold text-nowrap">
               Talk to Blockchain Expert
             </p>
             <p className="bg-green-gradient rounded-full p-2">

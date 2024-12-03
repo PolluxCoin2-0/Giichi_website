@@ -15,10 +15,10 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <div className="mt-8 md:mt-24 px-4 md:px-64">
+    <div className="mt-8 md:mt-16 lg:mt-20 xl:mt-24 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
       <div>
-        <p className="text-md md:text-2xl font-bold text-white">TESTIMONIALS</p>
-        <p className="text-2xl md:text-6xl font-bold text-white mt-4 md:leading-tight">
+        <p className="text-md md:text-lg lg:text-2xl font-bold text-white">TESTIMONIALS</p>
+        <p className="block md:hidden lg:block text-2xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mt-4 md:leading-tight">
           Tales of Triumph from <br />{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
             Our Happy Clients
@@ -26,9 +26,9 @@ const TestimonialsSection = () => {
         </p>
 
         <p className="hidden md:block lg:hidden text-[#ffffff] text-3xl md:text-4xl lg:text-6xl font-bold pt-8 leading-tight">
-          Tales of Triumph from Our Happy Clients
+          Tales of Triumph from  <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">Our Happy Clients</span>
         </p>
-        <p className="text-[#ffffff] text-sm md:text-lg font-medium md:font-semibold pt-5">
+        <p className="text-[#ffffff] text-sm lg:text-lg font-medium lg:font-semibold pt-5">
           Discover the journey of our valued clients from vision to victory and
           join the success parade.
         </p>
@@ -43,7 +43,7 @@ const TestimonialsSection = () => {
           }}
           onMouseMove={handleMouseMove}
         >
-          <p className="text-[#ffffff] w-full text-sm md:text-lg leading-8 md:leading-10 pt-16 px-4 md:px-44 text-justify md:text-center">
+          <p className="text-[#ffffff] w-full text-sm lg:text-lg leading-8 xl:leading-10 pt-16 px-4 md:px-12 lg:px-20 xl:px-32 2xl:px-44 text-justify md:text-center">
             The services you offer are a broad range of services. All of your
             services complement each other really well and the 
             team has been brilliant. You know they get back to us very quickly

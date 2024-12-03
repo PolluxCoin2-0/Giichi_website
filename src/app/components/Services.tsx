@@ -17,7 +17,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, text }) => (
     }}
   >
     <p className="text-green">{icon}</p>
-    <p className="text-white text-lg font-medium text-nowrap">{text}</p>
+    <p className="text-white text-sm lg:text-lg font-medium text-nowrap">{text}</p>
   </div>
 );
 
@@ -33,14 +33,14 @@ const Services = () => {
   ];
 
   return (
-    <div className="mt-12 md:mt-40 px-4 md:px-64">
+    <div className="mt-12 md:mt-20 lg:mt-20 xl:mt-40 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row ">
         <div className="flex flex-col w-full md:w-[60%]">
-          <p className="text-md md:text-2xl font-bold text-white">
+          <p className="text-md md:text-lg lg:text-2xl font-bold text-white">
             OUR SERVICES
           </p>
-          <p className="text-2xl md:text-6xl font-bold text-white mt-4 md:leading-tight">
+          <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mt-4 md:leading-tight">
             Manage Service Delivery <br />
             Across Various
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
@@ -49,10 +49,16 @@ const Services = () => {
               Ecosystem
             </span>
           </p>
-          <p className="text-sm md:text-lg font-medium text-white mt-5">
+          <p className="block md:hidden lg:block text-sm lg:text-lg font-medium text-white mt-5 w-full xl:w-[80%]">
             Giichi has been helping organizations throughout the World to manage
-            their <br /> Web3 Industry with our unique approach to technology
-            management <br />
+            their  Web3 Industry with our unique approach to technology
+            management 
+            and consultancy solutions.
+          </p>
+
+          <p className="hidden md:block lg:hidden text-sm lg:text-lg font-medium text-white mt-5">
+            Giichi has been helping organizations throughout the World to manage
+            their Web3 Industry with our unique approach to technology management 
             and consultancy solutions.
           </p>
         </div>
@@ -62,7 +68,7 @@ const Services = () => {
       </div>
 
       {/* Features Section */}
-      <div className="mt-6 md:mt-12 w-[95%] md:w-[80%] text-center">
+      <div className="mt-6 md:mt-12 w-[95%] md:w-[100%] lg:w-[90%] xl:w-[80%] text-center">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 w-full">
           {features.map((feature) => (
             <FeatureCard
@@ -76,26 +82,26 @@ const Services = () => {
 
       {/* Services Section */}
       <div className="mt-24">
-        <p className="text-md md:text-2xl font-bold text-white">
+        <p className="text-md md:text-lg lg:text-2xl font-bold text-white">
           OUR CORE SERVICES
         </p>
-        <p className="text-2xl md:text-6xl font-bold mt-4 text-white">
+        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mt-4 text-white">
           Tailored to Your{" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
             Needs
           </span>
         </p>
 
-        <div className="flex flex-col md:flex-row items-center w-full mt-8 md:mt-16">
+        <div className="flex flex-col md:flex-row items-center w-full mt-8 xl:mt-16">
           {/* services */}
-          <div className="w-full md:w-[50%]">
+          <div className="w-full md:w-[70%] lg:w-[50%]">
             <div className="flex flex-row space-x-4">
               <div className="bg-green-gradient rounded-full w-5"></div>
               <div>
-                <p className="text-white text-xl md:text-2xl font-bold  ">
+                <p className="text-white text-xl xl:text-2xl font-bold  ">
                   Smart Contracts
                 </p>
-                <p className="text-white text-xs md:text-lg font-medium pt-2 w-full md:w-[60%]">
+                <p className="text-white text-xs xl:text-lg font-medium pt-2 w-full md:w-[90%] lg:w-[60%] xl:w-[80%]">
                   Revolutionizing business with smart contracts. We write all
                   types of smart contracts including token gen, staking
                   protocols, DAOs, DEXs, NFTs, yield farms, & more.
@@ -106,10 +112,10 @@ const Services = () => {
             <div className="flex flex-row space-x-4 mt-12">
               <div className="bg-green-gradient rounded-full w-5"></div>
               <div>
-                <p className="text-white text-xl md:text-2xl font-bold  ">
+                <p className="text-white text-xl xl:text-2xl font-bold  ">
                   DApps
                 </p>
-                <p className="text-white text-xs md:text-lg font-medium pt-2 w-full md:w-[60%]">
+                <p className="text-white text-xs xl:text-lg font-medium pt-2 w-full md:w-[90%] lg:w-[60%] xl:w-[80%]">
                   Experience the future of decentralized computing. Our Dapps
                   empower users with transparency, security, and control. From
                   DeFi to NFTs, explore limitless possibilities.
@@ -120,10 +126,10 @@ const Services = () => {
             <div className="flex flex-row space-x-4 mt-12">
               <div className="bg-green-gradient rounded-full w-5"></div>
               <div>
-                <p className="text-white text-xl md:text-2xl font-bold  ">
+                <p className="text-white text-xl xl:text-2xl font-bold  ">
                   Node As Service
                 </p>
-                <p className="text-white text-xs md:text-lg font-medium pt-2 w-full md:w-[60%]">
+                <p className="text-white text-xs xl:text-lg font-medium pt-2 w-full md:w-[90%] lg:w-[60%] xl:w-[80%]">
                   Custom nodes and APIs tailored to your needs. Utilize our
                   expertise to create scalable, high-performance, and secure
                   blockchain infrastructure for your applications
@@ -133,7 +139,7 @@ const Services = () => {
           </div>
 
           {/* images */}
-          <div className="w-full md:w-[50%] mt-10 md:mt-0">
+          <div className="w-full md:w-[70%] lg:w-[50%] mt-10 md:mt-0">
             <Image
               src={serviceLogo}
               alt="banner-image"

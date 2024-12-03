@@ -9,13 +9,16 @@ import { HiHomeModern } from "react-icons/hi2";
 const Footer = () => {
   return (
     <div className="bg-black pb-12">
-      <div className="flex flex-col md:flex-row justify-start md:space-x-8 md:justify-around px-4 md:px-10 lg:px-32 pt-10 pb-10 border-b-[1px] border-[#7c7c7c]">
+      <div className="flex flex-col md:flex-row justify-start md:space-x-8 md:justify-around px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 pt-10 pb-10 border-b-[1px] border-[#7c7c7c]">
         <div className="">
           <p className=" text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen text-2xl md:text-lg lg:text-2xl  font-bold pb-0 md:pb-4">
             Company
           </p>
           <p className="text-md md:text-sm lg:text-lg font-semibold text-[#ffffff] pt-4">
-            About Us
+            About
+          </p>
+          <p className="text-md md:text-sm lg:text-lg font-semibold text-[#ffffff] pt-4">
+            Blog
           </p>
           <p className="text-md md:text-sm lg:text-lg font-semibold text-[#ffffff] pt-4">
             Portfolio
@@ -116,7 +119,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row md:space-x-10 justify-between px-4 md:px-10 lg:px-48 pt-10">
+      <div className="flex flex-col md:flex-row md:space-x-10 justify-between px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 pt-10">
         <div>
           <Image src={GiichiLightLogo} alt="" className="" />
           <p className="pt-5 text-[#ffffff] text-xs  font-semibold">
@@ -144,7 +147,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="text-center mt-10 md:mt-16 text-[#ffffff] text-lg font-medium px-6 md:px-0 ">
+      <div className="text-center mt-10 md:mt-16 text-[#ffffff] text-sm md:text-lg font-medium px-6 md:px-0 ">
         Copyright © 2024 Giichi IT Solution & Private Limited. All Rights
         Reserved.
       </div>
