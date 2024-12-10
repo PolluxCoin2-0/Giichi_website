@@ -1,6 +1,6 @@
 import React, { ReactNode } from "react";
 import Image from "next/image";
-import { GiStrikingArrows } from "react-icons/gi";
+import { FaArrowsSpin } from "react-icons/fa6";
 import serviceLogo from "../../../public/assests/solution_img.png";
 interface FeatureCardProps {
   icon: ReactNode; // Accepts any React node (e.g., icons, JSX elements)
@@ -73,7 +73,7 @@ const Services = () => {
           {features.map((feature) => (
             <FeatureCard
               key={feature.id}
-              icon={<GiStrikingArrows size={20} />}
+              icon={<FaArrowsSpin  size={20} />}
               text={feature.text}
             />
           ))}

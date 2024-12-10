@@ -46,7 +46,7 @@ const Navbar = () => {
 
       {/* "Work With Us" Button */}
       <div
-        className="hidden lg:flex flex-row items-center space-x-6 rounded-full p-3 pl-6 pr-4 text-white">
+        className="hidden lg:flex flex-row items-center space-x-6 rounded-full p-3 pl-6 pr-4 text-white cursor-pointer">
        <CgMenuLeft size={48}/>
       </div>
 

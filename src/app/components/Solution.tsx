@@ -60,18 +60,30 @@ const data = [
   
 
   const Card: React.FC<CardProps> = ({ title, subtitle, description }) => {    return (
-      <div className="w-full md:w-[50%] border-[1px] border-[#434343] rounded-2xl py-6 px-2 md:px-4 bg-lightestGreen font-medium">
-        <div className="flex flex-col md:flex-row items-center justify-between">
-          <div className="flex flex-col md:flex-row items-start md:items-center space-x-0 md:space-x-4">
-            <p className="bg-green-gradient px-4 py-5 rounded-2xl text-xl font-medium">{title}</p>
-            <p className="text-white text-xl font-medium">{subtitle}</p>
-          </div>
-          <p className="text-black bg-green-gradient rounded-full p-1 flex justify-start">
-            <MdArrowOutward size={24} />
-          </p>
-        </div>
-        <p className="text-lightGray text-[17px] font-medium leading-snug py-4 text-justify">{description}</p>
+    <div className="w-full md:w-[50%] border-[1px] border-[#434343] rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen font-medium">
+    {/* Wrapper for Title, Subtitle, and Arrow */}
+    <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
+      {/* Title and Subtitle */}
+      <div className="flex flex-col items-start lg:flex-row lg:items-center space-y-2 md:space-y-0 lg:space-x-4 w-full">
+        <p className="bg-green-gradient px-4 py-4 lg:py-5 rounded-2xl text-lg md:text-xl font-medium">
+          {title}
+        </p>
+        <p className="text-white text-lg md:text-xl font-medium text-nowrap">{subtitle}</p>
       </div>
+      {/* Arrow */}
+      <div className="flex md:justify-end w-full md:w-auto">
+        <p className="text-black bg-green-gradient rounded-full p-1 flex items-center justify-center mt-2 md:mt-0">
+          <MdArrowOutward size={24} />
+        </p>
+      </div>
+    </div>
+  
+    {/* Description */}
+    <p className="text-lightGray text-[17px] font-medium leading-snug py-4 text-justify">
+      {description}
+    </p>
+  </div>
+  
     );
   };
 
@@ -88,8 +100,8 @@ const Solution = () => {
         </p>
 
         <div className="flex flex-col space-y-5 mt-6 ">
-        {Array.from({ length: 3 }).map((_, rowIndex) => (
-          <div key={rowIndex} className="flex flex-col md:flex-row w-full space-x-0 md:space-x-5">
+        {Array.from({ length: 5 }).map((_, rowIndex) => (
+          <div key={rowIndex} className="flex flex-col md:flex-row w-full space-x-0 md:space-x-5 space-y-5 md:space-y-0">
             {data.slice(rowIndex * 2, rowIndex * 2 + 2).map((item, index) => (
               <Card
                 key={index}
