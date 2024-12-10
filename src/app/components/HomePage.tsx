@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../../../src/app/components/Button";
-
 const HomePage = () => {
   return (
     <div className="pt-12 lg:pt-28 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 relative">
@@ -34,7 +33,8 @@ const HomePage = () => {
           <div>
             <Button buttonText="Let's Talk About Your Project" />
           </div>
-         
+           
+           
         </div>
       </div>
 

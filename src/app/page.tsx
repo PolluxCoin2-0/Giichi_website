@@ -7,12 +7,15 @@ import Blog from "./components/Blog";
 import Testimonials from "./components/Testimonials";
 import Portfolio from "./components/Portfolio/page";
 import Consultation from "./components/Consultation";
+import Projects from "./components/Projects";
+
 export default function Home() {
   return (
     <div className="">
       <HomePage />
       <Partner />
       <Solution/>
+      <Projects/>
       <About />
       <Services />
       <Blog />

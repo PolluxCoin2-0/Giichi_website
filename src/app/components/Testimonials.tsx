@@ -32,9 +32,10 @@ const TestimonialsSection = () => {
           Discover the journey of our valued clients from vision to victory and
           join the success parade.
         </p>
-
+         
+         <div className="flex flex-row space-x-6 w-full">
         <div
-          className="bg-[#121212] mt-5 w-full lg:w-[800px] xl:w-[1000px] flex flex-col justify-center items-center text-center pb-10 border-[1px] 
+          className="bg-[#121212] mt-5 w-[50%] flex flex-col justify-center items-center text-center border-[1px]  p-6
           border-[#868585] relative overflow-hidden"
           style={{
             boxShadow:
@@ -43,7 +44,7 @@ const TestimonialsSection = () => {
           }}
           onMouseMove={handleMouseMove}
         >
-          <p className="text-[#ffffff] w-full text-sm lg:text-lg leading-8 xl:leading-10 pt-16 px-4 md:px-12 lg:px-20 xl:px-32 2xl:px-44 text-justify md:text-center">
+          <p className="text-[#ffffff] w-full text-sm lg:text-[15px] leading-6 px-4 text-justify md:text-center">
             The services you offer are a broad range of services. All of your
             services complement each other really well and the 
             team has been brilliant. You know they get back to us very quickly
@@ -55,24 +56,67 @@ const TestimonialsSection = () => {
 
         
 
-          <p className="mt-2 md:mt-0 lg:mt-5 bg-[#EBBF0E] rounded-full px-3 py-3 md:px-6 md:py-6">
+          <p className="mt-2 bg-[#EBBF0E] rounded-full px-2 py-2 md:px-3 md:py-3">
             <IoPerson size={52} />
           </p>
-          <p className="mt-2 md:mt-5 text-[#ffffff] text-lg md:text-xl font-semibold">
+          <p className="mt-2 text-[#ffffff] text-lg md:text-xl font-semibold">
             Durgesh Yadav
           </p>
-          <div className="mt-2 md:mt-5 flex flex-row space-x-2 text-[#EBBF0E]">
-            <IoStarSharp size={24} />
-            <IoStarSharp size={24} />
-            <IoStarSharp size={24} />
-            <IoStarSharp size={24} />
-            <IoStarSharp size={24} />
+          <div className="mt-2 flex flex-row space-x-2 text-[#EBBF0E]">
+            <IoStarSharp size={16} />
+            <IoStarSharp size={16} />
+            <IoStarSharp size={16} />
+            <IoStarSharp size={16} />
+            <IoStarSharp size={16} />
           </div>
           {/* Add an overlay for the blur effect */}
           <div
             className="absolute inset-0 blur-[100px] -z-10"
             style={{ pointerEvents: "none" }}
           />
+        </div>
+
+        <div
+          className="bg-[#121212] mt-5 w-[50%] flex flex-col justify-center items-center text-center border-[1px] p-6
+          border-[#868585] relative overflow-hidden"
+          style={{
+            boxShadow:
+              "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.6)", // White shadow with moderate opacity
+            background: `radial-gradient(circle at ${bgPosition.x}px ${bgPosition.y}px, rgba(235, 191, 14, 0.7), transparent)`, // Moving background effect
+          }}
+          onMouseMove={handleMouseMove}
+        >
+          <p className="text-[#ffffff] w-full text-sm lg:text-[15px] leading-6 px-4 text-justify md:text-center ">
+            The services you offer are a broad range of services. All of your
+            services complement each other really well and the 
+            team has been brilliant. You know they get back to us very quickly
+            with our issues and have a lot of knowledge and 
+            expertise around react and usability. Its nice to come to an
+            organization like Maticz. Good opportunity for the 
+            businesses to start your project with Maticz.
+          </p>
+
+        
+
+          <p className="mt-2 bg-[#EBBF0E] rounded-full px-2 py-2 md:px-3 md:py-3">
+            <IoPerson size={52} />
+          </p>
+          <p className="mt-2 text-[#ffffff] text-lg md:text-xl font-semibold">
+            Durgesh Yadav
+          </p>
+          <div className="mt-2 flex flex-row space-x-2 text-[#EBBF0E]">
+            <IoStarSharp size={16} />
+            <IoStarSharp size={16} />
+            <IoStarSharp size={16} />
+            <IoStarSharp size={16} />
+            <IoStarSharp size={16} />
+          </div>
+          {/* Add an overlay for the blur effect */}
+          <div
+            className="absolute inset-0 blur-[100px] -z-10"
+            style={{ pointerEvents: "none" }}
+          />
+        </div>
         </div>
       </div>
     </div>
