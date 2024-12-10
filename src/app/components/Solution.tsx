@@ -64,7 +64,7 @@ const data = [
     {/* Wrapper for Title, Subtitle, and Arrow */}
     <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
       {/* Title and Subtitle */}
-      <div className="flex flex-col items-start lg:flex-row lg:items-center space-y-2 md:space-y-0 lg:space-x-4 w-full">
+      <div className="flex flex-col items-start lg:flex-row lg:items-center space-y-2 md:space-y-0 lg:space-x-2 w-full">
         <p className="bg-green-gradient px-4 py-4 lg:py-5 rounded-2xl text-lg md:text-xl font-medium">
           {title}
         </p>
