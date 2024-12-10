@@ -9,7 +9,7 @@ const Button: React.FC<ButtonProps> = ({ buttonText }) => {
     <div className="flex justify-center items-center">
       <a
         href="#_"
-        className="relative px-6 py-2 md:px-8 md:py-3 font-medium text-white group text-center"
+        className="relative px-6 py-2 md:px-8 md:py-3 font-normal text-white group text-center"
       >
         {/* Outer animated layers */}
         <span className="absolute inset-0 w-full h-full transition-all duration-300 ease-out transform translate-x-0 -skew-x-12 bg-lightgreen group-hover:bg-green group-hover:skew-x-12"></span>

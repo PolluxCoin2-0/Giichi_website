@@ -2,8 +2,8 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import GiichiLogo from "../../../../public/assests/logo-light.png";
-import { MdOutlineArrowForward } from "react-icons/md";
 import { RiMenu3Line, RiCloseLargeFill } from "react-icons/ri";
+import { CgMenuLeft } from "react-icons/cg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black  px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 py-4  flex justify-between items-center relative">
+    <div className="bg-black px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 py-4 flex justify-between items-center relative pt-2">
       {/* Logo */}
       <div>
         <Image
@@ -25,7 +25,7 @@ const Navbar = () => {
           alt="banner-image"
           width={0}
           height={0}
-          style={{ width: "70%" }}
+          style={{ width: "100%" }}
           className=""
         />
       </div>
@@ -38,25 +38,16 @@ const Navbar = () => {
             "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4)",
         }}
       >
-        <p className="text-md font-medium text-white">Home</p>
-        <p className="text-md font-medium text-white">About</p>
-        <p className="text-md font-medium text-white">Work</p>
-        <p className="text-md font-medium text-white">Services</p>
-        <p className="text-md font-medium text-white">Web3 Solutions</p>
+        <p className="text-md font-medium text-white text-lg">Work</p>
+        <p className="text-md font-medium text-white text-lg">Services</p>
+        <p className="text-md font-medium text-white text-lg">Industry</p>
+        <p className="text-md font-medium text-white text-lg">About</p>
       </div>
 
       {/* "Work With Us" Button */}
       <div
-        className="hidden lg:flex flex-row items-center space-x-6 border-[1px] rounded-full p-3 pl-6 pr-4"
-        style={{
-          boxShadow:
-            "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4)",
-        }}
-      >
-        <p className="text-md font-medium text-white">Contact</p>
-        <p className="bg-green-gradient rounded-full p-1">
-          <MdOutlineArrowForward size={24} />
-        </p>
+        className="hidden lg:flex flex-row items-center space-x-6 rounded-full p-3 pl-6 pr-4 text-white">
+       <CgMenuLeft size={48}/>
       </div>
 
       {/* Mobile Menu Toggle */}
@@ -78,7 +69,7 @@ const Navbar = () => {
       {isMenuOpen && (
         
         <div
-          className="absolute top-0 left-0 w-full bg-black p-6  lg:hidden z-10"
+          className="absolute top-0 left-0 w-full bg-black p-8  lg:hidden z-10"
           style={{
             boxShadow: "0 2px 20px rgba(0, 0, 0, 0.8)",
           }}
@@ -94,12 +85,11 @@ const Navbar = () => {
         />
         </div>
           <div className="flex flex-col items-start  space-y-6 mt-8">
-          <p className="text-md font-medium text-white">Home</p>
-          <p className="text-md font-medium text-white">About</p>
-          <p className="text-md font-medium text-white">Work</p>
-          <p className="text-md font-medium text-white">Services</p>
-          <p className="text-md font-medium text-white">Web3 Solutions</p>
-          <div
+          <p className="text-md font-medium text-white text-lg">Work</p>
+          <p className="text-md font-medium text-white text-lg">Services</p>
+          <p className="text-md font-medium text-white text-lg">Industry</p>
+          <p className="text-md font-medium text-white text-lg">About</p>
+          {/* <div
             className="flex flex-row items-center space-x-6 border-[1px] rounded-full p-2 pl-6 pr-4"
             style={{
               boxShadow:
@@ -110,7 +100,7 @@ const Navbar = () => {
             <p className="bg-green-gradient rounded-full p-1">
               <MdOutlineArrowForward size={24} />
             </p>
-          </div>
+          </div> */}
           </div>
         </div>
       )}

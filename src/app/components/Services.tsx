@@ -40,7 +40,7 @@ const Services = () => {
           <p className="text-md md:text-lg lg:text-2xl font-bold text-white">
             OUR SERVICES
           </p>
-          <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mt-4 md:leading-tight">
+          <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mt-4 md:leading-tight">
             Manage Service Delivery <br />
             Across Various
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
