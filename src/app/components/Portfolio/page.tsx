@@ -44,42 +44,54 @@ const Portfolio = () => {
         <div className="mt-4 md:mt-2 lg:mt-5 2xl:mt-0 ">
           <ul className="flex flex-wrap lg:flex-row space-x-0 md:space-x-4 lg:space-x-2 xl:space-x-2">
             <li
-              className="text-[#ffffff] text-md lg:text-xl font-medium px-4 py-2 lg:px-8 lg:py-4 rounded-full cursor-pointer hover:bg-green-gradient transition-colors"
+              className={`text-[#ffffff] text-md lg:text-xl font-medium px-4 py-2 lg:px-8 lg:py-4 rounded-full cursor-pointer hover:bg-green-gradient transition-colors ${
+                viewNft ? "bg-green-gradient" : "hover:bg-green-gradient"
+              }`}
               onClick={() => toggleSection("NftPage")}
             >
               NFT
             </li>
 
             <li
-              className="text-[#ffffff] text-lg lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors"
+              className={`text-[#ffffff] text-lg lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors ${
+                viewExchange ? "bg-green-gradient" : "hover:bg-green-gradient"
+              }`}
               onClick={() => toggleSection("Exchange")}
             >
               Exchange
             </li>
 
             <li
-              className="text-[#ffffff] text-md lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors"
+              className={`text-[#ffffff] text-md lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors ${
+                viewTokonomics ? "bg-green-gradient" : "hover:bg-green-gradient"
+              }`}
               onClick={() => toggleSection("Tokonomics")}
             >
               Tokonomics
             </li>
 
             <li
-              className="text-[#ffffff] text-md lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors"
+              className={`text-[#ffffff] text-md lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors ${
+                viewLaunchpad ? "bg-green-gradient" : "hover:bg-green-gradient"
+              }`}
               onClick={() => toggleSection("Launchpad")}
             >
               Launchpad
             </li>
 
             <li
-              className="text-[#ffffff] text-md lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors"
+              className={`text-[#ffffff] text-md lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors ${
+                viewMlm ? "bg-green-gradient" : "hover:bg-green-gradient"
+              }`}
               onClick={() => toggleSection("Mlm")}
             >
               MLM
             </li>
 
             <li
-              className="text-[#ffffff] text-md lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors"
+              className={`text-[#ffffff] text-md lg:text-xl font-medium cursor-pointer px-4 py-2 lg:px-8 lg:py-4 rounded-full hover:bg-green-gradient transition-colors ${
+                viewCryptoWallet ? "bg-green-gradient" : "hover:bg-green-gradient"
+              }`}
               onClick={() => toggleSection("Cryptowallet")}
             >
               Crypto Wallet

@@ -6,13 +6,13 @@ const About = () => {
       <div className="flex flex-col md:flex-row w-full">
         <div className="flex flex-col pt-20 lg:pt-16 w-full md:w-[60%]">
           <p className="text-md md:text-lg lg:text-2xl font-bold text-white">KNOW US </p>
-          <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold text-white mt-4 md:leading-tight">
+          <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mt-4 md:leading-tight">
             Reliable{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
               Blockchain{" "}
             </span>
             <br />
-            Developement Company{" "}
+            Development Company{" "}
           </p>
           <p className="block md:hidden lg:block text-sm lg:text-lg font-medium text-white mt-4 md:mt-6 w-full xl:w-[70%]">
             Our Mission is to empower individuals and businesses through innovative web3 and blockchain solutions that drive progress and create

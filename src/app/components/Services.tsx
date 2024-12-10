@@ -33,7 +33,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="mt-12 md:mt-20 lg:mt-20 xl:mt-40 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
+    <div className="mt-12 md:mt-20 lg:mt-20 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row ">
         <div className="flex flex-col w-full md:w-[60%]">
@@ -41,11 +41,11 @@ const Services = () => {
             OUR SERVICES
           </p>
           <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mt-4 md:leading-tight">
-            Manage Service Delivery <br />
+            Manage Service Delivery 
             Across Various
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
               {" "}
-              Web3 <br />
+              Web3 
               Ecosystem
             </span>
           </p>
@@ -68,8 +68,8 @@ const Services = () => {
       </div>
 
       {/* Features Section */}
-      <div className="mt-6 md:mt-12 w-[95%] md:w-[100%] lg:w-[90%] xl:w-[80%] text-center">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-10 w-full">
+      <div className="mt-6 md:mt-12 w-[95%] md:w-[100%] lg:w-[100%] xl:w-[80%] text-center">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4  w-full">
           {features.map((feature) => (
             <FeatureCard
               key={feature.id}
