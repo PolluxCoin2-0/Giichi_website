@@ -82,3 +82,12 @@
   animation: scaleUpDown 3s ease-in-out infinite;
 }
 
+
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2; /* Ensure exactly 2 lines */
+  overflow: hidden; /* Required to trigger truncation */
+  line-height: 1.5; /* Adjust line height for consistent behavior */
+}
+

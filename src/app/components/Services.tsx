@@ -33,7 +33,7 @@ const Services = () => {
   ];
 
   return (
-    <div className="mt-12 md:mt-20 lg:mt-20 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
+    <div className="mt-10 lg:mt-20 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
       {/* Header Section */}
       <div className="flex flex-col md:flex-row ">
         <div className="flex flex-col w-full md:w-[60%]">
@@ -81,7 +81,7 @@ const Services = () => {
       </div>
 
       {/* Services Section */}
-      <div className="mt-24">
+      <div className="mt-12">
         <p className="text-md md:text-lg lg:text-2xl font-bold text-white">
           OUR CORE SERVICES
         </p>

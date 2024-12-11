@@ -33,7 +33,7 @@ const Portfolio = () => {
   };
 
   return (
-    <div className="w-full flex flex-col items-start px-2 md:px-10 lg:px-12 xl:px-48 2xl:px-64 pt-20 pb-12 lg:pt-32">
+    <div className="w-full flex flex-col items-start px-2 md:px-10 lg:px-12 xl:px-48 2xl:px-64 pt-8 pb-12 lg:pt-32">
       <div className="w-full flex flex-col 2xl:flex-row justify-between items-start 2xl:items-center ">
         <div>
           <p className="pl-3 lg:pl-0 text-xl md:text-2xl font-bold text-white">

@@ -18,7 +18,7 @@ const Consultation = () => {
   };
 
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 mt-12 pb-20">
+    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 mt-12 pb-8">
       <div className="flex flex-col md:flex-row items-center space-x-0 md:space-x-12 border-[1px] border-lightblack rounded-2xl p-4 md:p-10 pt-10 w-full">
         <div className="w-full md:w-[60%]">
           <p className="text-2xl md:text-2xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-snug">

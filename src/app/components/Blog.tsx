@@ -6,7 +6,6 @@ import Image from "next/image";
 import dynamic from "next/dynamic";
 import img from "../../../public/assests/BlogImg.png";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { MdOutlineArrowForward } from "react-icons/md";
 
 interface ArrowProps {
   onClick?: () => void;
@@ -18,19 +17,26 @@ const Blog: React.FC = () => {
   // Custom Arrow Components
   const PreviousArrow: React.FC<ArrowProps> = ({ onClick }) => {
     return (
-      <div className="slider-arrow slider-arrow-left" onClick={onClick}>
-        <FaArrowLeft className="slider-arrow-icon" />
+      <div
+        className="slider-arrow slider-arrow-left absolute -top-4 md:-top-20 right-16 flex items-center justify-center space-x-2 hover:bg-green-gradient p-2 rounded-full"
+        onClick={onClick}
+      >
+        <FaArrowLeft className="slider-arrow-icon text-white" size={20}/>
       </div>
     );
   };
-
+  
   const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
     return (
-      <div className="slider-arrow slider-arrow-right" onClick={onClick}>
-        <FaArrowRight className="slider-arrow-icon" />
+      <div
+        className="slider-arrow slider-arrow-right absolute -top-4 md:-top-20 right-4 flex items-center justify-center hover:bg-green-gradient p-2 rounded-full"
+        onClick={onClick}
+      >
+        <FaArrowRight className="slider-arrow-icon text-white" size={20}/>
       </div>
     );
   };
+  
 
   const settings: Settings = {
     dots: true,
@@ -74,9 +80,9 @@ const Blog: React.FC = () => {
   };
 
   return (
-    <div className="mt-8 md:mt-16 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
+    <div className="mt-8 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
       <div className="flex flex-col md:flex-row justify-between item-start md:items-center">
-        <div>
+        {/* <div className="hidden md:block">
           <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-snug ">
             Insights from
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
@@ -86,20 +92,20 @@ const Blog: React.FC = () => {
             </span>
             from the industry
           </p>
-        </div>
-
-        <div
-          className="flex flex-row items-center space-x-6 border-[1px] rounded-full p-2 lg:p-3 pl-8 pr-4 mt-4 max-w-fit"
-          style={{
-            boxShadow:
-              "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4) ",
-          }}
-        >
-          <p className="text-md font-medium text-white ">View All</p>
-          <p className="bg-green-gradient rounded-full p-1">
-            <MdOutlineArrowForward size={24} />
+        </div> */}
+        
+        {/* <div className="block md:hidden">
+          <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-snug ">
+            Insights from
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
+               {" "}our experts & 
+              news{" "}
+            </span>
+            from the industry
           </p>
-        </div>
+        </div> */}
+        
+        <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-snug ">Our Latest Blog Updates</p>
       </div>
       
       <div className="mt-0 ">

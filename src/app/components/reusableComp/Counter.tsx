@@ -24,7 +24,9 @@ const Counter: React.FC<CounterProps> = ({ target }) => {
     return () => clearInterval(interval); // Clean up the interval on unmount
   }, [target]);
 
-  return <p className="text-center text-4xl font-bold">{count}+</p>;
+  return <p className="text-center text-4xl lg:text-6xl font-bold">
+         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">{count}+</span>
+         </p>;
 };
 
 export default Counter;

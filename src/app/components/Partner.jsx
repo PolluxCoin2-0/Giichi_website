@@ -53,13 +53,13 @@ const Partner = () => {
   };
 
   return (
-    <div className="mt-10 md:mt-24 pb-6 overflow-hidden ">
-      <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-tight px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
+    <div className="mt-10 md:mt-0 lg:mt-10 pb-16 overflow-hidden ">
+      {/* <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-tight px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
           Partnerships
         </span>{" "}
         - Collaborating <br /> for Collective Progress
-      </p>
+      </p> */}
       <div className="carousel-container mt-8 md:mt-16 ">
         <div className="slider-container">
           <Slider ref={sliderRef} {...settings}>
@@ -68,7 +68,7 @@ const Partner = () => {
                 <Image
                   src={img}
                   alt={`Image ${index + 1}`}
-                  className="rounded-2xl flip-image w-[50%]"
+                  className="rounded-2xl flip-image w-[30%]"
                 />
               </div>
             ))}

@@ -1,10 +1,12 @@
-"use client"
+"use client";
 
 import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import polinkImg from "../../../public/assests/PolinkLogo.png";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
+import { FiPlusCircle } from "react-icons/fi";
+import { FiMinusCircle } from "react-icons/fi";
 const data = [
   {
     img: polinkImg,
@@ -73,26 +75,25 @@ const Card: React.FC<CardProps> = ({
   stack3,
   stack4,
 }) => {
-
-    const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
 
   const toggleDescription = () => {
     setIsExpanded(!isExpanded);
   };
 
   return (
-    <div className="w-full md:w-[50%] rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen font-medium">
+    <div className="w-full md:w-[50%] rounded-2xl py-2 md:py-5 px-2 md:px-4 bg-lightestGreen font-medium">
       {/* Wrapper for Title, Subtitle, and Arrow */}
-      <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
+      <div className="flex flex-row items-center justify-between">
         {/* Title and Subtitle */}
-        <div className="flex flex-col items-start lg:flex-row lg:items-center space-y-2 md:space-y-0 lg:space-x-2 w-full">
+        <div className="flex flex-row items-center space-y-2 md:space-y-0 space-x-2 w-full">
           <Image
             src={img}
             alt="banner-image"
             width={0}
             height={0}
-            style={{ width: "8%" }} // Set default width to 100% for mobile
-            className="rounded-2xl w-full md:w-[100%] lg:w-[70%]" // Use Tailwind's responsive width utilities
+            style={{ width: "16%" }} // Set default width to 100% for mobile
+            className="rounded-2xl w-full " // Use Tailwind's responsive width utilities
           />
 
           <p className="text-white text-lg md:text-xl font-medium text-nowrap">
@@ -100,7 +101,7 @@ const Card: React.FC<CardProps> = ({
           </p>
         </div>
         {/* Arrow */}
-        <div className="flex md:justify-end w-full md:w-auto">
+        <div className="flex justify-end w-full md:w-auto">
           <p className="text-black bg-green-gradient rounded-md px-4 py-1 flex items-center justify-center mt-2 md:mt-0 font-semibold">
             {subtitle}
           </p>
@@ -110,13 +111,9 @@ const Card: React.FC<CardProps> = ({
       {/* Description */}
       <div className="flex flex-row">
         <p
-          className={`text-lightGray text-[15px] font-medium leading-snug py-4 text-justify w-[90%] ${
-            !isExpanded ? "line-clamp-3" : ""
-          }`}
+          className="text-lightGray text-[15px] font-medium leading-snug py-4 text-justify w-full md:w-[90%] transition-all duration-300"
           style={{
-            WebkitLineClamp: !isExpanded ? 3 : undefined, // Fallback for Webkit browser
-            display: "-webkit-box",
-            WebkitBoxOrient: "vertical",
+            maxHeight: isExpanded ? "none" : "3.6em", // Adjust height for 2 lines (line-height × 2)
             overflow: "hidden",
           }}
         >
@@ -128,34 +125,42 @@ const Card: React.FC<CardProps> = ({
       <div className="flex justify-between items-center">
         <button
           onClick={toggleDescription}
-          className="text-white text-[15px] font-medium leading-snug py-4 text-justify"
+          className="text-orange font-medium leading-snug py-4 text-justify"
         >
-          {isExpanded ? "View Less" : "View More"}
+          {isExpanded ? (
+            <FiMinusCircle size={24} />
+          ) : (
+            <FiPlusCircle size={24} />
+          )}
         </button>
-        </div>
+      </div>
       {/* Technology stack */}
       <div className="flex flex-row justify-between items-center">
         <div>
-          <p className="text-lightGray">Technology Stack:</p>
-          <div className="flex flex-row items-center space-x-4 mt-2">
-            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[15px]">
+          <p className="text-white text-[15px]">Technology Stack:</p>
+          <div className="flex flex-row items-center space-x-1 lg:space-x-4 mt-2">
+            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack1}
             </p>
-            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[15px]">
+            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack2}
             </p>
-            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[15px]">
+            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack3}
             </p>
-            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[15px]">
+            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack4}
             </p>
           </div>
         </div>
 
-        <div className="flex md:justify-end w-full md:w-auto">
-          <p className="text-black bg-green-gradient rounded-full p-1 flex items-center justify-center mt-2 md:mt-0">
+        <div className="flex md:justify-end w-full md:w-auto ml-3 lg:ml-0 mt-5 md:mt-6 lg:mt-0">
+          <p className="hidden md:block text-black bg-green-gradient rounded-full p-1 items-center justify-center mt-2 md:mt-0">
             <MdArrowOutward size={24} />
+          </p>
+
+          <p className="flex md:hidden text-black bg-green-gradient rounded-full p-1 items-center justify-center mt-2 md:mt-0">
+            <MdArrowOutward size={16} />
           </p>
         </div>
       </div>
@@ -165,7 +170,7 @@ const Card: React.FC<CardProps> = ({
 
 const Projects = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 mt-12">
+    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 mt-8 lg:mt-12">
       <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-tight ">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
           Blockchain{" "}
@@ -197,26 +202,26 @@ const Projects = () => {
       </div>
 
       <div className="-mt-10">
-        <div className="flex flex-row space-x-5 w-full">
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
+        <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full">
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
         </div>
 
-        <div className="flex flex-row space-x-5 w-full mt-5">
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
+        <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full mt-5">
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
         </div>
 
-        <div className="flex flex-row space-x-5 w-full mt-5">
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
-        <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-[25%]"></p>
+        <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full mt-5">
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
         </div>
       </div>
     </div>

@@ -4,6 +4,7 @@ import Image from "next/image";
 import GiichiLogo from "../../../../public/assests/logo-light.png";
 import { RiMenu3Line, RiCloseLargeFill } from "react-icons/ri";
 import { CgMenuLeft } from "react-icons/cg";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,15 +33,15 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       <div
-        className="hidden lg:flex flex-row items-center lg:space-x-10 xl:space-x-16 rounded-full p-4 lg:pl-8 lg:pr-8 xl:pl-20 xl:pr-20"
+        className="hidden lg:flex flex-row items-center lg:space-x-10 xl:space-x-28 rounded-full p-4 lg:pl-8 lg:pr-8 xl:pl-32 xl:pr-32"
         style={{
           boxShadow:
             "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4)",
         }}
       >
-        <p className="text-md font-medium text-white text-lg">Work</p>
+        <Link href=""> <p className="text-md font-medium text-white text-lg">Work</p></Link>
         <p className="text-md font-medium text-white text-lg">Services</p>
-        <p className="text-md font-medium text-white text-lg">Industry</p>
+        <p className="text-md font-medium text-white text-lg">Consulting</p>
         <p className="text-md font-medium text-white text-lg">About</p>
       </div>
 
@@ -87,7 +88,7 @@ const Navbar = () => {
           <div className="flex flex-col items-start  space-y-6 mt-8">
           <p className="text-md font-medium text-white text-lg">Work</p>
           <p className="text-md font-medium text-white text-lg">Services</p>
-          <p className="text-md font-medium text-white text-lg">Industry</p>
+          <p className="text-md font-medium text-white text-lg">Consulting</p>
           <p className="text-md font-medium text-white text-lg">About</p>
           {/* <div
             className="flex flex-row items-center space-x-6 border-[1px] rounded-full p-2 pl-6 pr-4"

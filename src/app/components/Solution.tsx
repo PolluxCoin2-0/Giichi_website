@@ -60,12 +60,12 @@ const data = [
   
 
   const Card: React.FC<CardProps> = ({ title, subtitle, description }) => {    return (
-    <div className="w-full md:w-[50%] border-[1px] border-[#434343] rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen font-medium">
+    <div className="w-full md:w-[50%] rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen font-medium">
     {/* Wrapper for Title, Subtitle, and Arrow */}
     <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
       {/* Title and Subtitle */}
       <div className="flex flex-col items-start lg:flex-row lg:items-center space-y-2 md:space-y-0 lg:space-x-2 w-full">
-        <p className="bg-green-gradient px-4 py-4 lg:py-5 rounded-2xl text-lg md:text-xl font-medium">
+        <p className="bg-green-gradient px-4 py-2 lg:py-4 lg:py-5 rounded-2xl text-lg md:text-xl font-medium">
           {title}
         </p>
         <p className="text-white text-lg md:text-xl font-medium text-nowrap">{subtitle}</p>
@@ -89,7 +89,7 @@ const data = [
 
 const Solution = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 mt-4">
+    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 -mt-6 md:mt-0 lg:mt-4">
         <p className="hidden md:block text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-tight ">
             Empower Your Business with <br/>Expert 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> Blockchain Solutions</span>

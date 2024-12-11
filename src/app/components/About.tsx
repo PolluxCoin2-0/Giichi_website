@@ -4,7 +4,7 @@ const About = () => {
   return (
     <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64  ">
       <div className="flex flex-col md:flex-row w-full">
-        <div className="flex flex-col pt-20 lg:pt-16 w-full md:w-[60%]">
+        <div className="flex flex-col pt-16 w-full md:w-[60%]">
           <p className="text-md md:text-lg lg:text-2xl font-bold text-white">KNOW US </p>
           <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white mt-4 md:leading-tight">
             Reliable{" "}
@@ -44,9 +44,9 @@ const About = () => {
       </div>
       
       {/* for tablet and above */}
-      <div className="hidden md:flex flex-row justify-around bg-green p-4 w-full rounded-br-full md:mt-10 2xl:mt-20 ">
+      <div className="hidden md:flex flex-row justify-around p-4 w-full rounded-br-full">
         {/* First Stat */}
-        <div className="border-r-[1px] md:p-2 lg:p-3 xl:p-4 w-[25%] ">
+        <div className="border-r-[2px] border-green md:p-2 lg:p-3 xl:p-4 w-[25%] border-green-gradient">
           <Counter target={15} />
           <p className="text-center md:text-sm lg:text-lg font-medium leading-6 text-white">
             Successful <br />
@@ -55,15 +55,15 @@ const About = () => {
         </div>
 
         {/* Second Stat */}
-        <div className="border-r-[1px] md:p-2 lg:p-3 xl:p-4 w-[25%]">
-          <Counter target={15} />
+        <div className="border-r-[2px] border-green  md:p-2 lg:p-3 xl:p-4 w-[25%] ">
+        <Counter target={15} />
           <p className="text-center md:text-sm lg:text-lg font-medium leading-6 text-white">
             Members in <br /> the team
           </p>
         </div>
 
         {/* Third Stat */}
-        <div className="border-r-[1px] md:p-2 lg:p-3 xl:p-4 w-[25%]">
+        <div className="border-r-[2px] border-green  md:p-2 lg:p-3 xl:p-4 w-[25%]">
           <Counter target={10} />
           <p className="text-center md:text-sm lg:text-lg font-medium leading-6 text-white">
             Years of <br /> Experience
@@ -80,7 +80,7 @@ const About = () => {
       </div>
 
       {/* for mobile */}
-      <div className="md:hidden flex flex-col items-center space-y-8 mt-12">
+      <div className="md:hidden flex flex-col items-center space-y-8">
          {/* First Stat */}
          <div className="border-b-[1px] border-lightgreen p-4 ">
           <p className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"><Counter target={15} /></p>
