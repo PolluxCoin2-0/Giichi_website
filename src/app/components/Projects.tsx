@@ -92,7 +92,7 @@ const Card: React.FC<CardProps> = ({
             alt="banner-image"
             width={0}
             height={0}
-            style={{ width: "16%" }} // Set default width to 100% for mobile
+            style={{ width: "10%" }} // Set default width to 100% for mobile
             className="rounded-2xl w-full " // Use Tailwind's responsive width utilities
           />
 

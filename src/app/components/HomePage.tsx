@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "../../../src/app/components/Button";
+import mainImg from "../../../public/assests/Isolation_Mode.svg"
+import Image from "next/image";
 const HomePage = () => {
   return (
-    <div className="pt-12 lg:pt-28 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 relative">
+    <div className="pt-12 lg:pt-28 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 relative w-full">
       <div
         className="absolute -top-[10%] left-0 w-[0px] md:w-[2000px] h-[0px] md:h-[120px] bg-yellow-gradient blur-3xl rounded-[50%] opacity-60 animate-spotlight-left"
         style={{
@@ -11,7 +13,7 @@ const HomePage = () => {
       ></div>
 
       {/* intro */}
-      <div className="flex flex-col md:flex-row">
+      <div className="flex flex-col md:flex-row w-full items-center">
       <div className="flex flex-col space-y-4 md:space-y-6 lg:space-y-10 ">
         <p className="blocck md:hidden lg:block text-2xl md:text-xl lg:text-5xl xl:text-6xl font-bold md:leading-tight text-white">
           Unlock the potential of <br />
@@ -39,7 +41,16 @@ const HomePage = () => {
       </div>
 
       {/* image */}
-      <div></div>
+      <div className="w-[50%]">
+      <Image
+              src={mainImg}
+              alt="banner-image"
+              width={0}
+              height={0}
+              style={{ width: "100%" }} // Set default width to 100% for mobile
+              className="rounded-2xl w-full md:w-[100%] lg:w-[70%]" // Use Tailwind's responsive width utilities
+            />
+      </div>
       </div>
     </div>
   );

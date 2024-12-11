@@ -45,7 +45,7 @@ const data = [
           'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
       },
       {
-        title: 'NFT Solutions',
+        title: 'AI Solutions',
         subtitle: 'Cryptocurrency Development',
         description:
           'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
