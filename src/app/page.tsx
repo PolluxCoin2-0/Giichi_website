@@ -5,7 +5,7 @@ import Partner from "./components/Partner";
 import Solution from "./components/Solution";
 import Blog from "./components/Blog";
 import Testimonials from "./components/Testimonials";
-// import Portfolio from "./components/Portfolio/page";
+//  import Portfolio from "./components/Portfolio/page";
 import Consultation from "./components/Consultation";
 import Projects from "./components/Projects";
 import Work from "./components/Work";

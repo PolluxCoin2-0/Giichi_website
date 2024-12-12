@@ -1,6 +1,5 @@
 import React from 'react'
 import { MdArrowOutward } from "react-icons/md";
-
 const data = [
     {
       title: 'DeFi',
@@ -113,6 +112,8 @@ const Solution = () => {
           </div>
         ))}
       </div>
+
+     
     </div>
   )
 }
