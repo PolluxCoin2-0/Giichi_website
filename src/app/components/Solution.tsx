@@ -64,7 +64,7 @@ const data = [
     <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
       {/* Title and Subtitle */}
       <div className="flex flex-col items-start lg:flex-row lg:items-center space-y-2 md:space-y-0 lg:space-x-2 w-full">
-        <p className="bg-green-gradient px-4 py-2 lg:py-4 lg:py-5 rounded-2xl text-lg md:text-xl font-medium">
+        <p className="bg-green-gradient px-4 py-2 lg:py-4 rounded-2xl text-lg md:text-xl font-medium text-nowrap">
           {title}
         </p>
         <p className="text-white text-lg md:text-xl font-medium text-nowrap">{subtitle}</p>
