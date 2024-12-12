@@ -91,14 +91,14 @@ const Navbar = () => {
           alt="banner-image"
           width={0}
           height={0}
-          style={{ width: "70%" }}
+          style={{ width: "80%" }}
           className=""
         />
       </div>
 
       {/* Desktop Navigation */}
       <div
-        className="hidden lg:flex flex-row items-center lg:space-x-10 xl:space-x-28 rounded-full p-4 lg:pl-8 lg:pr-8 xl:pl-32 xl:pr-32"
+        className="hidden lg:flex flex-row items-center lg:space-x-10 xl:space-x-12 2xl:space-x-28 rounded-full p-4 lg:pl-8 lg:pr-8 xl:pl-12 2xl:pl-32 xl:pr-12 2xl:pr-32"
         style={{
           boxShadow:
             "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4)",
@@ -533,7 +533,7 @@ const Navbar = () => {
                 </div>
                 {isDefiOpen && (
                   <div className=" text-white -top-2 -left-12 mt-4 bg-black rounded-xl shadow-lg w-[610px]">
-                    <div className="w-[270px] space-y-2">
+                    <div className="w-full space-y-2">
                       <p className="text-sm font-medium text-lightGray">
                         DeFi Development Services
                       </p>
