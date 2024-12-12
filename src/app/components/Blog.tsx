@@ -80,7 +80,7 @@ const Blog: React.FC = () => {
   };
 
   return (
-    <div className="mt-8 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
+    <div className="mt-8 md:mt-16 lg:mt-20 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 ">
       <div className="flex flex-col md:flex-row justify-between item-start md:items-center">
         {/* <div className="hidden md:block">
           <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-snug ">

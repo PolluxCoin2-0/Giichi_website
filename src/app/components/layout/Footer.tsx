@@ -8,7 +8,7 @@ import { HiHomeModern } from "react-icons/hi2";
 
 const Footer = () => {
   return (
-    <div className="bg-black pb-12">
+    <div className="bg-black pb-12 border-2 ">
       <div className="flex flex-col md:flex-row justify-start md:space-x-8 md:justify-around px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 pt-10 pb-10 border-b-[1px] border-[#7c7c7c]">
         <div className="">
           <p className=" text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen text-2xl md:text-lg lg:text-2xl  font-bold pb-0 md:pb-4">

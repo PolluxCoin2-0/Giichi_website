@@ -15,7 +15,7 @@ const TestimonialsSection = () => {
   };
 
   return (
-    <div className="mt-12 lg:mt-20 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
+    <div className="mt-12 lg:mt-20 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 ">
       <div>
         <p className="text-md md:text-lg lg:text-2xl font-bold text-white">
           TESTIMONIALS

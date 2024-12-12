@@ -170,7 +170,7 @@ const Card: React.FC<CardProps> = ({
 
 const Projects = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 mt-8 lg:mt-12">
+    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 mt-8 lg:mt-12 ">
       <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-tight ">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
           Blockchain{" "}

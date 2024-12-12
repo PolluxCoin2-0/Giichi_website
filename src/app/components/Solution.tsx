@@ -88,7 +88,7 @@ const data = [
 
 const Solution = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 -mt-6 md:mt-0 lg:mt-4">
+    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 -mt-6 md:mt-0 lg:mt-4 " >
         <p className="hidden md:block text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-tight ">
             Empower Your Business with <br/>Expert 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> Blockchain Solutions</span>
