@@ -85,13 +85,23 @@ const Navbar = () => {
   return (
     <div className="bg-black px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 py-4 flex justify-between items-center relative pt-2">
       {/* Logo */}
-      <div>
+      <div className="hidden md:block">
         <Image
           src={GiichiLogo}
           alt="banner-image"
           width={0}
           height={0}
           style={{ width: "80%" }}
+          className=""
+        />
+      </div>
+      <div className="block md:hidden">
+        <Image
+          src={GiichiLogo}
+          alt="banner-image"
+          width={0}
+          height={0}
+          style={{ width: "50%" }}
           className=""
         />
       </div>
