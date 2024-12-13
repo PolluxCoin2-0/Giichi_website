@@ -65,8 +65,8 @@ export default {
           '100%': { transform: 'translateX(0)', opacity: '1' },
         },
         blurToVisible: {
-          '0%': { opacity: 0, filter: 'blur(10px)' },
-          '100%': { opacity: 1, filter: 'blur(0px)' },
+          '0%': { opacity: '0', filter: 'blur(10px)' },
+          '100%': { opacity: '1', filter: 'blur(0px)' },
         },
       },
       animation: {
