@@ -71,7 +71,7 @@ const HomePage = () => {
               alt="banner-image"
               width={0}
               height={0}
-              style={{ width: "70%" }} // Set default width to 100% for mobile
+              style={{ width: "50%" }} // Set default width to 100% for mobile
               className="animate-wave delay-200" // Use Tailwind's responsive width utilities
             />
             </div>
