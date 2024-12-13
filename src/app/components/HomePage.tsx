@@ -99,7 +99,7 @@ const HomePage = () => {
       </div>
 
       <div className="w-full block 2xl:hidden mt-5">
-        <div className="relative z-40 "> 
+        <div className="relative "> 
       <Image
               src={mainMobileImg}
               alt="banner-image"
