@@ -34,15 +34,54 @@ export default {
          
        
       },
-      animation: {
-        marquee: 'scroll 20s linear infinite', // Animation duration and speed
-      },
+    
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' }, // Start position
           '100%': { transform: 'translateX(-100%)' }, // End position, moves entire width
         },
+        rotate360: {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        scaleUp: {
+          '0%, 100%': { transform: 'scale(1)' }, // Normal size
+          '50%': { transform: 'scale(1.1)' },  // Slightly enlarged
+        },
+        scaleDown: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(0.9)" },
+        },
+        bounceVertically: {
+          '0%, 100%': { transform: 'translateY(0)' }, // Start and end at original position
+          '50%': { transform: 'translateY(-20px)' }, // Move up slightly in the middle
+        },
+        slideInLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        blurToVisible: {
+          '0%': { opacity: 0, filter: 'blur(10px)' },
+          '100%': { opacity: 1, filter: 'blur(0px)' },
+        },
       },
+      animation: {
+        marquee: 'scroll 20s linear infinite', // Animation duration and speed
+        scaleUp: 'scaleUp 8s ease-in-out infinite', // Animates smoothly in a loop
+        scaleDown: "scaleDown 8s ease-in-out infinite", // New scale-down animation
+        rotate360: 'rotate360 50s linear infinite',
+        bounceVertically: 'bounceVertically 3s ease-in-out infinite', // Bounce animation
+        slideInLeft: 'slideInLeft 1s ease-out',
+        slideInRight: 'slideInRight 1s ease-out',
+        blurToVisible: 'blurToVisible 1.5s ease-out', // Adjust duration and easing as desired
+      },
+       
+      
+  
     },
 
  

@@ -1,6 +1,11 @@
 import React from "react";
 import Button from "../../../src/app/components/Button";
-import mainImg from "../../../public/assests/Isolation_Mode.svg"
+import mainImg1 from "../../../public/assests/mainImg1.png";
+import mainImg2 from "../../../public/assests/mainImg2.png";
+import mainImg3 from "../../../public/assests/mainImg3.png";
+import mainImg4 from "../../../public/assests/mainImg4.png";
+import mainImg5 from "../../../public/assests/mainImg5.png";
+
 import Image from "next/image";
 const HomePage = () => {
   return (
@@ -13,8 +18,8 @@ const HomePage = () => {
       ></div>
 
       {/* intro */}
-      <div className="flex flex-col md:flex-row w-full items-center">
-      <div className="flex flex-col space-y-4 md:space-y-6 lg:space-y-10 ">
+      <div className="flex flex-col md:flex-row w-full items-center animate-blurToVisible">
+      <div className="flex flex-col space-y-4 md:space-y-6 lg:space-y-10  ">
         <p className="blocck md:hidden lg:block text-2xl md:text-xl lg:text-5xl xl:text-6xl font-bold md:leading-tight text-white">
           Unlock the potential of <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> WEB3 Industry</span>  with <br />
@@ -39,15 +44,57 @@ const HomePage = () => {
       </div>
 
       {/* image */}
-      <div className="w-[50%]">
+      <div className="w-[50%] ">
+        <div className="relative z-40"> 
       <Image
-              src={mainImg}
+              src={mainImg1}
               alt="banner-image"
               width={0}
               height={0}
-              style={{ width: "100%" }} // Set default width to 100% for mobile
-              className="rounded-2xl w-full md:w-[100%] lg:w-[70%] " // Use Tailwind's responsive width utilities
+              style={{ width: "90%" }} // Set default width to 100% for mobile
+              className="animate-scaleUp" // Use Tailwind's responsive width utilities
             />
+            </div>
+            <div className="absolute z-50 top-28 w-[650px]">
+               <Image
+              src={mainImg2}
+              alt="banner-image"
+              width={0}
+              height={0}
+              style={{ width: "90%" }} // Set default width to 100% for mobile
+              className="animate-scaleDown" // Use Tailwind's responsive width utilities
+            />
+            </div>
+            <div className="absolute z-50 top-36">
+               <Image
+              src={mainImg3}
+              alt="banner-image"
+              width={0}
+              height={0}
+              style={{ width: "90%" }} // Set default width to 100% for mobile
+              className="animate-wave delay-200" // Use Tailwind's responsive width utilities
+            />
+            </div>
+            <div className="absolute z-50 top-60 right-96">
+               <Image
+              src={mainImg4}
+              alt="banner-image"
+              width={0}
+              height={0}
+              style={{ width: "90%" }} // Set default width to 100% for mobile
+              className="animate-wave delay-300" // Use Tailwind's responsive width utilities
+            />
+            </div>
+            <div className="absolute z-50 top-72 right-[670px] ">
+               <Image
+              src={mainImg5}
+              alt="banner-image"
+              width={0}
+              height={0}
+              style={{ width: "90%" }} // Set default width to 100% for mobile
+              className="animate-wave delay-400" // Use Tailwind's responsive width utilities
+            />
+            </div>
       </div>
       </div>
     </div>
