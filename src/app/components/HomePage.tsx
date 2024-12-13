@@ -32,7 +32,7 @@ const HomePage = () => {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> WEB3 Industry</span>  with <br />
           expert professional
         </p>
-        <p className="text-sm lg:text-lg font-medium text-white w-full md:w-[50%] xl:w-[50%]">
+        <p className="text-sm lg:text-lg font-medium text-white w-full md:w-[70%] ">
         Step into the future with Giichi IT Solutions – your trusted hub for cutting-edge blockchain expertise and innovation.
 
         </p>
