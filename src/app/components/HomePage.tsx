@@ -71,7 +71,7 @@ const HomePage = () => {
               alt="banner-image"
               width={0}
               height={0}
-              style={{ width: "90%" }} // Set default width to 100% for mobile
+              style={{ width: "70%" }} // Set default width to 100% for mobile
               className="animate-wave delay-200" // Use Tailwind's responsive width utilities
             />
             </div>
@@ -82,7 +82,7 @@ const HomePage = () => {
               width={0}
               height={0}
               style={{ width: "90%" }} // Set default width to 100% for mobile
-              className="animate-wave delay-300" // Use Tailwind's responsive width utilities
+              className="animate-wave delay-400" // Use Tailwind's responsive width utilities
             />
             </div>
             <div className="absolute z-50 top-72 right-[670px] ">
@@ -92,7 +92,7 @@ const HomePage = () => {
               width={0}
               height={0}
               style={{ width: "90%" }} // Set default width to 100% for mobile
-              className="animate-wave delay-400" // Use Tailwind's responsive width utilities
+              className="" // Use Tailwind's responsive width utilities
             />
             </div>
       </div>
