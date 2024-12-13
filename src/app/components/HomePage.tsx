@@ -21,7 +21,7 @@ const HomePage = () => {
       {/* intro */}
       <div className="flex flex-col md:flex-row w-full items-center animate-blurToVisible">
       <div className="flex flex-col space-y-4 md:space-y-6 lg:space-y-10  ">
-        <p className="block md:hidden lg:block text-2xl md:text-xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold md:leading-tight text-white">
+        <p className="block md:hidden lg:block text-2xl md:text-xl lg:text-4xl 2xl:text-6xl font-bold md:leading-tight text-white">
           Unlock the potential of <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> WEB3 Industry</span>  with <br />
           expert professional
