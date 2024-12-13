@@ -1,8 +1,8 @@
 import HomePage from "./components/HomePage";
 import Partner from "./components/Partner";
 import Solution from "./components/Solution";
-import Blog from "./components/Blog";
-import Testimonials from "./components/Testimonials";
+// import Blog from "./components/Blog";
+// import Testimonials from "./components/Testimonials";
 import Consultation from "./components/Consultation";
 import Projects from "./components/Projects";
 import Work from "./components/Work";
@@ -17,9 +17,9 @@ export default function Home() {
       <Partner />
       <Solution />
       <Projects />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Work/>
-      <Blog />
+      {/* <Blog /> */}
       <Consultation />
       {/* <About /> */}
       {/* <Services /> */}

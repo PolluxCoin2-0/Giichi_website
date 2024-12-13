@@ -31,8 +31,13 @@ export default {
       backgroundImage: {
           'yellow-gradient': 'linear-gradient(to bottom, #FAAB02 0%, #539D43 100%)',
           'green-gradient': 'linear-gradient(to bottom, #539D43 0%, #99cc00 100%)',
-         
-       
+           'vital-ocean': 'linear-gradient(90deg, #1CB5E0 0%, #000851 100%)',
+           'kale-salad': 'linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%)',
+           'retro-wagon': 'linear-gradient(90deg, #FDBB2D 0%, #22C1C3 100%)',
+           'lovely-lilly': 'linear-gradient(90deg, #efd5ff 0%, #515ada 100%)',
+           'melo-yellow': 'linear-gradient(90deg, #f8ff00 0%, #3ad59f 100%)',
+           'oyee-goyee': 'linear-gradient(90deg, #0700b8 0%, #00ff88 100%)',
+           'bloody-minosa': 'linear-gradient(90deg, #d53369 0%, #daae51 100%)'
       },
     
       keyframes: {
