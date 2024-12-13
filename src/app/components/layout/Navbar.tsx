@@ -41,8 +41,6 @@ const Navbar = () => {
     };
   }, []);
 
-
-
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };

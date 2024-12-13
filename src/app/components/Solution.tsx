@@ -5,37 +5,37 @@ const data = [
       title: 'DeFi',
       subtitle: 'DeFi Development Services',
       description:
-        'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
+        'At Giichi IT Solutions, we are at the forefront of the DeFi revolution, offering cutting-edge decentralized finance solutions that drive innovation for businesses worldwide. Our DeFi development services are designed to enable seamless and secure financial transactions, fostering greater financial inclusivity and empowering businesses to thrive in the decentralized ecosystem.',
     },
     {
       title: 'NFT',
       subtitle: 'NFT Marketplace Development',
       description:
-        'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
+        'At Giichi IT Solutions, we specialize in creating customized NFT marketplace platforms that enable businesses to tap into the growing digital asset market. Our solutions are designed to facilitate secure, transparent, and scalable NFT transactions, opening up new opportunities for creators, collectors, and entrepreneurs.',
     },
         {
       title: 'Web3',
       subtitle: 'Web3 Integration Services',
       description:
-        'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
+        'With Giichi IT Solutions, businesses can seamlessly integrate Web3 technologies into their existing platforms. Our Web3 integration services help unlock the potential of decentralized applications, smart contracts, and blockchain networks, enabling businesses to thrive in the decentralized web.',
     },
     {
       title: 'DAO',
       subtitle: 'DAO Development Services',
       description:
-        'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
+        'At Giichi IT Solutions, we build decentralized autonomous organizations (DAOs) that empower communities to govern and manage resources in a transparent and secure manner. Our DAO development services help businesses transition to decentralized decision-making models, ensuring a democratic approach to governance.',
     },
     {
       title: 'DApp',
       subtitle: 'Custom Blockchain Solutions',
       description:
-        'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
+        'Giichi IT Solutions offers custom blockchain development services tailored to your business needs. We create secure, scalable, and efficient blockchain solutions that enhance your operations, improve transparency, and drive innovation across various industries.',
     },
     {
       title: 'P2E',
-      subtitle: 'Cryptocurrency Development',
+      subtitle: 'P2E (Play-to-Earn) Development',
       description:
-        'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
+        'At Giichi IT Solutions, we bring the power of gaming and blockchain together with our Play-to-Earn (P2E) development services. We create immersive, rewarding, and profitable gaming ecosystems that enable players to earn cryptocurrency while enjoying exciting gameplay.',
     },
     {
         title: 'Gamify',
@@ -45,9 +45,9 @@ const data = [
       },
       {
         title: 'AI Solutions',
-        subtitle: 'Cryptocurrency Development',
+        subtitle: 'AI Solutions for Blockchain',
         description:
-          'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
+          'At Giichi IT Solutions, we leverage the power of artificial intelligence to enhance blockchain applications. Our AI solutions help optimize performance, predict trends, and improve decision-making processes, enabling businesses to drive innovation and stay ahead of the curve in the world of blockchain and decentralized technologies.',
       },
   ];
   
@@ -78,7 +78,7 @@ const data = [
     </div>
   
     {/* Description */}
-    <p className="text-lightGray text-[17px] font-medium leading-snug py-4 text-justify">
+    <p className="text-lightGray text-[15px] md:text-[17px] font-medium leading-snug py-4">
       {description}
     </p>
   </div>

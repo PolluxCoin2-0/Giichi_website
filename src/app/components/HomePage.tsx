@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div className="pt-12 2xl:pt-28 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 relative w-full ">
       <div
-        className="hidden md:block absolute -top-[20%] left-0 w-[0px] md:w-[2500px] h-[0px] md:h-[150px] bg-yellow-gradient blur-3xl rounded-[50%] opacity-60 animate-spotlight-left "
+        className="hidden md:block absolute -top-[20%] left-0 w-[0px] lg:w-[2500px] h-[0px] lg:h-[150px] bg-yellow-gradient blur-3xl rounded-[50%] opacity-60 animate-spotlight-left "
         style={{
           transform: "translate(-50%, -50%) rotate(-130deg)",
         }}
