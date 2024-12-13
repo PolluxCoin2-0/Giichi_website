@@ -18,14 +18,14 @@ interface FormData {
   whatsapp: string;
 }
 const servicesList = [
-  "Crypto Exchange Development",
-  "Cryptocurrency Development",
-  "Smart Contract MLM Development",
-  "DApp Development",
-  "Ethereum Token Development",
-  "Blockchain Development",
-  "HyperLedger Development",
-  "NFT Marketplace",
+  "DeFi Development Services",
+  "NFT Marketplace Development",
+  "Web3 Integration Services",
+  "DAO Development Services",
+  "Custom Blockchain Solution",
+  "Cryptocurreny Development",
+  "Gamify Development",
+  "AI Solutions",
   "Other Inquiry",
 ];
 
