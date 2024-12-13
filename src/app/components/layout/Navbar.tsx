@@ -91,7 +91,7 @@ const Navbar = () => {
           alt="banner-image"
           width={0}
           height={0}
-          style={{ width: "80%" }}
+          style={{ width: "70%" }}
           className=""
         />
       </div>
@@ -108,7 +108,7 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       <div
-        className="hidden lg:flex flex-row items-center lg:space-x-10 xl:space-x-12 2xl:space-x-28 rounded-full p-4 lg:pl-8 lg:pr-8 xl:pl-12 2xl:pl-32 xl:pr-12 2xl:pr-32"
+        className="hidden lg:flex flex-row items-center lg:space-x-10 xl:space-x-12 2xl:space-x-28 rounded-full p-4 lg:pl-8 lg:pr-8 xl:pl-12 xl:pr-12 2xl:pl-24 2xl:pr-24"
         style={{
           boxShadow:
             "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4)",
@@ -460,13 +460,13 @@ const Navbar = () => {
               }}
             >
               <div className="flex flex-col space-y-2">
-                <p className="text-white text-[15px] hover:text-lightGray text-nowrap">
+                <p className="text-white lg:text-lg font-medium hover:text-lightGray text-nowrap">
                   Blockchain consulting service
                 </p>
-                <p className="text-white text-[15px] hover:text-lightGray text-nowrap">
+                <p className="text-white lg:text-lg font-medium hover:text-lightGray text-nowrap">
                   Blockchain security audit
                 </p>
-                <p className="text-white text-[15px] hover:text-lightGray text-nowrap">
+                <p className="text-white lg:text-lg font-medium hover:text-lightGray text-nowrap">
                   Tokenized RWA Development
                 </p>
               </div>
