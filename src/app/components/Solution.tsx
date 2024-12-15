@@ -59,7 +59,7 @@ const data = [
   
 
   const Card: React.FC<CardProps> = ({ title, subtitle, description }) => {    return (
-    <div className="w-full md:w-[50%] rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen font-medium">
+    <div className="w-full md:w-[50%] rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack font-medium">
     {/* Wrapper for Title, Subtitle, and Arrow */}
     <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
       {/* Title and Subtitle */}
@@ -71,7 +71,7 @@ const data = [
       </div>
       {/* Arrow */}
       <div className="flex md:justify-end w-full md:w-auto">
-        <p className="text-black bg-green-gradient rounded-full p-1 flex items-center justify-center mt-2 md:mt-0">
+        <p className="text-black bg-green-gradient rounded-full p-1 flex items-center justify-center mt-2 md:mt-0 cursor-pointer">
           <MdArrowOutward size={24} />
         </p>
       </div>
@@ -88,7 +88,7 @@ const data = [
 
 const Solution = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 -mt-6 md:mt-0 lg:mt-4 animate-blurToVisible " >
+    <div className="px-4 md:px-8 lg:px-16 xl:px-48 -mt-6 md:mt-0 lg:mt-4 animate-blurToVisible " >
         <p className="hidden md:block text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-tight ">
             Empower Your Business with <br/>Expert 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> Blockchain Solutions</span>

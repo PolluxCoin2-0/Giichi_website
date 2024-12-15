@@ -5,10 +5,12 @@ import GiichiLogo from "../../../../public/assests/logo-light.png";
 import { RiMenu3Line, RiCloseLargeFill } from "react-icons/ri";
 import { CgMenuLeft } from "react-icons/cg";
 import { FiPlusCircle, FiMinusCircle } from "react-icons/fi";
+import { CgMenuRight } from "react-icons/cg";
 import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuIconHovered, setIsMenuIconHovered] = useState(false);
   const [isServicesMenuOpen, setIsServicesMenuOpen] = useState(false);
   const [isConsultingMenuOpen, setIsConsultingMenuOpen] = useState(false);
   const [isDefiOpen, setIsDefiOpen] = useState(false);
@@ -81,7 +83,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-black px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 py-4 flex justify-between items-center relative pt-2">
+    <div className="bg-black px-4 md:px-8 lg:px-16 xl:px-48 py-4 flex justify-between items-center relative pt-2">
       {/* Logo */}
       <div className="hidden md:block">
         <Image
@@ -89,7 +91,7 @@ const Navbar = () => {
           alt="banner-image"
           width={0}
           height={0}
-          style={{ width: "70%" }}
+          style={{ width: "80%" }}
           className=""
         />
       </div>
@@ -106,22 +108,22 @@ const Navbar = () => {
 
       {/* Desktop Navigation */}
       <div
-        className="hidden lg:flex flex-row items-center lg:space-x-10 xl:space-x-12 2xl:space-x-28 rounded-full p-4 lg:pl-8 lg:pr-8 xl:pl-12 xl:pr-12 2xl:pl-24 2xl:pr-24"
+        className="hidden lg:flex flex-row items-center lg:space-x-10 xl:space-x-12 2xl:space-x-16 rounded-full p-4 lg:pl-8 lg:pr-8 xl:pl-12 xl:pr-12 2xl:pl-24 2xl:pr-24"
         style={{
           boxShadow:
             "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4)",
         }}
       >
-        <Link href="">
+        <Link href="#work">
           {" "}
-          <p className="text-md font-medium text-white text-lg">Work</p>
+          <p className="text-md font-medium text-white text-lg hover:text-lightGray cursor-pointer">Work</p>
         </Link>
-        <p className="text-md font-medium text-white text-lg">About</p>
+        <p className="text-md font-medium text-white text-lg hover:text-lightGray cursor-pointer">About</p>
 
         {/* Services Dropdown */}
         <div className="relative z-40" ref={dropdownRef}>
           <p
-            className="text-md font-medium text-white text-lg cursor-pointer"
+            className="text-md font-medium text-white text-lg cursor-pointer hover:text-lightGray"
             onClick={toggleServicesMenu}
             onMouseEnter={toggleServicesMenu}
           >
@@ -442,7 +444,7 @@ const Navbar = () => {
         {/* Consulting Dropdown */}
         <div className="relative">
           <p
-            className="text-md font-medium text-white text-lg cursor-pointer"
+            className="text-md font-medium text-white text-lg cursor-pointer hover:text-lightGray"
             onClick={toggleConsultingMenu}
             onMouseEnter={toggleConsultingMenu}
           >
@@ -458,13 +460,13 @@ const Navbar = () => {
               }}
             >
               <div className="flex flex-col space-y-2">
-                <p className="text-white lg:text-lg font-medium hover:text-lightGray text-nowrap">
+                <p className="text-white lg:text-lg font-medium hover:text-lightGray cursor-pointer text-nowrap">
                   Blockchain consulting service
                 </p>
-                <p className="text-white lg:text-lg font-medium hover:text-lightGray text-nowrap">
+                <p className="text-white lg:text-lg font-medium hover:text-lightGray cursor-pointer text-nowrap">
                   Blockchain security audit
                 </p>
-                <p className="text-white lg:text-lg font-medium hover:text-lightGray text-nowrap">
+                <p className="text-white lg:text-lg font-medium hover:text-lightGray cursor-pointer text-nowrap">
                   Tokenized RWA Development
                 </p>
               </div>
@@ -474,8 +476,12 @@ const Navbar = () => {
       </div>
 
       {/* "Work With Us" Button */}
-      <div className="hidden lg:flex flex-row items-center space-x-6 rounded-full p-3 pl-6 pr-4 text-white cursor-pointer">
-        <CgMenuLeft size={48} />
+      <div className="hidden lg:flex flex-row items-center space-x-6 rounded-full p-3 pl-6 pr-4 text-white cursor-pointer"
+      onMouseEnter={() => setIsMenuIconHovered(true)}
+      onMouseLeave={() => setIsMenuIconHovered(false)}>
+        <div className="icon-container">
+      {isMenuIconHovered ? <CgMenuRight size={48} /> : <CgMenuLeft size={48} />}
+      </div>
       </div>
 
       {/* Mobile Menu Toggle */}

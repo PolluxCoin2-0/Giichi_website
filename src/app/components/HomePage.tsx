@@ -1,16 +1,16 @@
 import React from "react";
 import Button from "../../../src/app/components/Button";
 import mainMobileImg from "../../../public/assests/heroImg.svg"
-import mainImg1 from "../../../public/assests/mainImg1.png";
-import mainImg2 from "../../../public/assests/mainImg2.png";
-import mainImg3 from "../../../public/assests/mainImg3.png";
-import mainImg4 from "../../../public/assests/mainImg4.png";
-import mainImg5 from "../../../public/assests/mainImg5.png";
+// import mainImg1 from "../../../public/assests/mainImg1.png";
+// import mainImg2 from "../../../public/assests/mainImg2.png";
+// import mainImg3 from "../../../public/assests/mainImg3.png";
+// import mainImg4 from "../../../public/assests/mainImg4.png";
+// import mainImg5 from "../../../public/assests/mainImg5.png";
 
 import Image from "next/image";
 const HomePage = () => {
   return (
-    <div className="pt-12 2xl:pt-28 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 relative w-full ">
+    <div className="pt-12 2xl:pt-28 px-4 md:px-8 lg:px-16 xl:px-48 relative w-full ">
       <div
         className="hidden md:block absolute -top-[20%] left-0 w-[0px] lg:w-[2500px] h-[0px] lg:h-[150px] bg-yellow-gradient blur-3xl rounded-[50%] opacity-60 animate-spotlight-left "
         style={{
@@ -19,9 +19,9 @@ const HomePage = () => {
       ></div>
 
       {/* intro */}
-      <div className="flex flex-col md:flex-row w-full items-center animate-blurToVisible">
-      <div className="flex flex-col space-y-4 md:space-y-6 lg:space-y-10  ">
-        <p className="block md:hidden lg:block text-2xl md:text-xl lg:text-4xl 2xl:text-6xl font-bold md:leading-tight text-white">
+      <div className="flex flex-col md:flex-row w-full items-center justify-between animate-blurToVisible">
+      <div className=" flex flex-col space-y-4 md:space-y-6 lg:space-y-10  ">
+        <p className="block md:hidden lg:block text-2xl md:text-xl lg:text-4xl 2xl:text-5xl font-bold md:leading-tight text-white">
           Unlock the potential of <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> WEB3 Industry</span>  with <br />
           expert professional
@@ -45,7 +45,7 @@ const HomePage = () => {
       </div>
 
       {/* image */}
-      <div className="w-[50%] hidden 2xl:block">
+     {/*} <div className="w-[50%] hidden 2xl:block">
         <div className="relative z-40 "> 
       <Image
               src={mainImg1}
@@ -97,15 +97,16 @@ const HomePage = () => {
             />
             </div>
       </div>
+      */}
 
-      <div className="w-full block 2xl:hidden mt-5">
-        <div className="relative "> 
+      <div className="w-[80%] mt-5 -mr-40">
+        <div className=" "> 
       <Image
               src={mainMobileImg}
               alt="banner-image"
               width={0}
               height={0}
-              style={{ width: "90%" }} // Set default width to 100% for mobile
+              style={{ width: "70%" }} // Set default width to 100% for mobile
               className="" // Use Tailwind's responsive width utilities
             />
             </div>

@@ -82,7 +82,7 @@ const Card: React.FC<CardProps> = ({
   };
 
   return (
-    <div className="w-full md:w-[50%] rounded-2xl py-2 md:py-5 px-2 md:px-4 bg-lightestGreen font-medium">
+    <div className="w-full md:w-[50%] rounded-2xl py-2 md:py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack font-medium">
       {/* Wrapper for Title, Subtitle, and Arrow */}
       <div className="flex flex-row items-center justify-between">
         {/* Title and Subtitle */}
@@ -111,7 +111,7 @@ const Card: React.FC<CardProps> = ({
       {/* Description */}
       <div className="flex flex-row">
         <p
-          className="text-lightGray text-[15px] font-medium leading-snug py-4 text-justify w-full md:w-[90%] transition-all duration-300"
+          className="text-lightGray text-[15px] font-medium leading-snug py-4 w-full transition-all duration-300"
           style={{
             maxHeight: isExpanded ? "none" : "3.6em", // Adjust height for 2 lines (line-height × 2)
             overflow: "hidden",
@@ -139,16 +139,16 @@ const Card: React.FC<CardProps> = ({
         <div>
           <p className="text-white text-[15px]">Technology Stack:</p>
           <div className="flex flex-row items-center space-x-1 lg:space-x-4 mt-2">
-            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
+            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack1}
             </p>
-            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
+            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack2}
             </p>
-            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
+            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack3}
             </p>
-            <p className="text-lightGray bg-lightblack px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
+            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack4}
             </p>
           </div>
@@ -170,7 +170,7 @@ const Card: React.FC<CardProps> = ({
 
 const Projects = () => {
   return (
-    <div className="px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64 mt-8 lg:mt-12 ">
+    <div id="work" className="px-4 md:px-8 lg:px-16 xl:px-48 mt-8 lg:mt-12 ">
       <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-tight ">
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
           Blockchain{" "}

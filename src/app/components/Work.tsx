@@ -100,7 +100,7 @@ const Work: React.FC = () => {
   };
 
   return (
-    <div className="mt-12 lg:mt-16 px-4 md:px-8 lg:px-16 xl:px-48 2xl:px-64">
+    <div  className="mt-12 lg:mt-16 px-4 md:px-8 lg:px-16 xl:px-48">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
         <div className="hidden md:block">
           <span className="text-md md:text-lg lg:text-2xl font-bold text-white">How We Work:</span>
@@ -134,7 +134,7 @@ const Work: React.FC = () => {
             <Slider {...settings}>
               {sliderData.map((item) => (
                 <div key={item.id} className="p-3">
-                  <div className="w-full mt-4 md:mt-0 bg-lightestGreen text-white h-auto rounded-2xl shadow-inner shadow-gray-400 flex flex-col lg:flex-row space-x-0 lg:space-x-6 px-4 py-4 lg:py-8">
+                  <div className="w-full mt-4 md:mt-0 bg-lightestGreen hover:bg-lightblack text-white h-auto rounded-2xl shadow-inner shadow-gray-400 flex flex-col lg:flex-row space-x-0 lg:space-x-6 px-4 py-4 lg:py-8">
                     <div className="text-6xl font-bold text-green w-full lg:w-[15%] text-start lg:text-center">
                       <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
                         {item.step}

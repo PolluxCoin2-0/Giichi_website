@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -8,6 +10,13 @@
   --foreground: #171717;
 }
 
+.alegreya {
+  font-family: "Alegreya", serif;
+  font-optical-sizing: auto;
+  font-weight: 5px;
+  font-style: normal;
+}
+ 
 @keyframes spotlightMoveLeft {
   0% {
     transform: translate(-50%, -70%) rotate(-130deg);
@@ -120,4 +129,32 @@
 
 .delay-400 {
   animation-delay: 0.4s;
+}
+
+.icon-container {
+  position: relative;
+}
+
+.icon {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.icon:nth-child(1) {
+  position: absolute;
+}
+
+.icon:nth-child(2) {
+  position: absolute;
+  opacity: 0;
+  transform: scale(0);
+}
+
+.icon-container:hover .icon:nth-child(1) {
+  opacity: 0;
+  transform: scale(0);
+}
+
+.icon-container:hover .icon:nth-child(2) {
+  opacity: 1;
+  transform: scale(1);
 }

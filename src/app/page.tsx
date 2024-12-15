@@ -11,10 +11,11 @@ import Work from "./components/Work";
 //  import Portfolio from "./components/Portfolio/page";
 
 export default function Home() {
+  
   return (
     <div className="">
       <HomePage />
-      <Partner />
+      <Partner /> 
       <Solution />
       <Projects />
       {/* <Testimonials /> */}

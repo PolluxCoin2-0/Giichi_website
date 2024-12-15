@@ -10,6 +10,7 @@ import img2 from "../../../public/assests/download (2).png";
 import img3 from "../../../public/assests/download.png";
 import img4 from "../../../public/assests/images.png";
 
+
 // Dynamically import React Slick with SSR disabled
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
@@ -43,14 +44,14 @@ const Partner = () => {
   };
 
   // Custom function to go to the previous slide
-  const goToPrevious = () => {
-    sliderRef.current?.slickPrev();
-  };
+  // const goToPrevious = () => {
+  //   sliderRef.current?.slickPrev();
+  // };
 
   // Custom function to go to the next slide
-  const goToNext = () => {
-    sliderRef.current?.slickNext();
-  };
+  // const goToNext = () => {
+  //   sliderRef.current?.slickNext();
+  // };
 
   return (
     <div className="mt-10 md:mt-0 lg:mt-10 pb-16 overflow-hidden  ">
@@ -73,12 +74,15 @@ const Partner = () => {
               </div>
             ))}
           </Slider>
-          <button className="slick-prev" onClick={goToPrevious}>
+          {/*
+            <button className="slick-prev" onClick={goToPrevious}>
             Prev
           </button>
           <button className="slick-next" onClick={goToNext}>
             Next
           </button>
+            */}
+          
         </div>
       </div>
     </div>
