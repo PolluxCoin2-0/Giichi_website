@@ -1,3 +1,5 @@
+"use client"
+import React from "react";
 import HomePage from "./components/HomePage";
 import Partner from "./components/Partner";
 import Solution from "./components/Solution";
@@ -11,14 +13,15 @@ import Work from "./components/Work";
 // import Testimonials from "./components/Testimonials";
 
 export default function Home() {
-  
+
+  // Render the actual content once `loading` is false
   return (
-    <div className="">
+    <div className="home-container">
       <HomePage />
-      <Partner /> 
+      <Partner />
       <Solution />
       <Projects />
-      <Work/>
+      <Work />
       <Consultation />
       {/* <About /> */}
       {/* <Services /> */}

@@ -12,8 +12,6 @@ import img4 from "../../../public/assests/xdc.png";
 import img5 from "../../../public/assests/lbank.png";
 import img6 from "../../../public/assests/coinstore.png";
 
-
-
 // Dynamically import React Slick with SSR disabled
 const Slider = dynamic(() => import("react-slick"), { ssr: false });
 
