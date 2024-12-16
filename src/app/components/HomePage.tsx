@@ -99,8 +99,8 @@ const HomePage = () => {
       </div>
       */}
 
-      <div className="w-[80%] mt-5 -mr-40">
-        <div className=" "> 
+      <div className=" w-[80%] mt-5 mr-0 md:-mr-40">
+        <div className="flex justify-center items-center md:justify-normal "> 
       <Image
               src={mainMobileImg}
               alt="banner-image"

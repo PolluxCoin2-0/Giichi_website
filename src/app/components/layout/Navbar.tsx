@@ -95,13 +95,13 @@ const Navbar = () => {
           className=""
         />
       </div>
-      <div className="block md:hidden">
+      <div className="block md:hidden pt-2">
         <Image
           src={GiichiLogo}
           alt="banner-image"
           width={0}
           height={0}
-          style={{ width: "50%" }}
+          style={{ width: "60%" }}
           className=""
         />
       </div>
@@ -488,7 +488,7 @@ const Navbar = () => {
       <div className="lg:hidden z-20">
         {isMenuOpen ? (
           <RiCloseLargeFill
-            className="text-white text-2xl cursor-pointer mt-5"
+            className="text-white text-2xl cursor-pointer mt-3"
             onClick={closeMenu}
           />
         ) : (
@@ -502,12 +502,12 @@ const Navbar = () => {
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div
-          className="absolute top-0 left-0 w-full bg-black p-8 lg:hidden z-10 min-h-screen"
+          className="absolute top-0 left-0 w-full bg-black p-6 lg:hidden z-10 min-h-screen"
           style={{
             boxShadow: "0 2px 20px rgba(0, 0, 0, 0.8)",
           }}
         >
-          <div className="flex justify-start">
+          <div className="flex justify-start ">
             <Image
               src={GiichiLogo}
               alt="banner-image"
