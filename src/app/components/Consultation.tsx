@@ -27,10 +27,8 @@ const Consultation = () => {
             Consultation
           </p>
           <p className="pt-5 text-gray text-sm lg:text-lg alegreya-font ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
-            commodi placeat soluta omnis quam eveniet laudantium ullam iste,
-            iure quod. Qui eius voluptate autem odio accusantium, quidem impedit
-            quia nisi.
+          With Giichi, your blockchain ideas evolve into transformative solutions. <br/>
+          We focus on precision, innovation, and collaboration to guide your project <br/>from concept to a successful launch.
           </p>
 
         <div
