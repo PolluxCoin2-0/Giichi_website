@@ -3,55 +3,89 @@
 import React, { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import polinkImg from "../../../public/assests/PolinkLogo.png";
+import uviImg from '../../../public/assests/uviLogo.png';
+import polluxImg from "../../../public/assests/polluxchain.png";
+import sulanaImg from "../../../public/assests/SulanaLogo.svg";
+import sulmineImg from "../../../public/assests/sulmineLogo.svg";
+import crowdImg from "../../../public/assests/crowdLogo.png";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import { FiPlusCircle } from "react-icons/fi";
 import { FiMinusCircle } from "react-icons/fi";
 const data = [
   {
-    img: polinkImg,
-    title: "Polink",
-    subtitle: "Defi",
+    img: uviImg,
+    title: "UviSwap",
+    subtitle: "DEX",
     description:
-      "Our mission at Rock'n'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.",
+      "UviSwap is a cutting-edge decentralized exchange (DEX) that brings concentrated liquidity to the forefront, offering unparalleled benefits for both users and liquidity providers. By enabling liquidity providers to allocate their funds within specific price ranges, UviSwap reduces slippage and enhances trading efficiency.",
     stack1: "Solidity",
-    stack2: "React",
-    stack3: "Flutter",
+    stack2: "NodeJS",
+    stack3: "ReactJS",
     stack4: "Javascript",
+    url: "https://uviswap.org/",
   },
   {
-    img: polinkImg,
-    title: "Polink",
+    img: polluxImg,
+    title: "Polluxchain",
     subtitle: "Dex",
     description:
-      "Our mission at Rock'n'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.",
-    stack1: "Solidity",
-    stack2: "React",
-    stack3: "Flutter",
+      "PolluxChain is a hybrid Layer 1 blockchain designed to provide scalable, efficient, and decentralized solutions for developers, businesses, and users. It supports advanced features such as concentrated liquidity, seamless DeFi applications, and token interoperability while enabling fast, secure, and low-cost transactions",
+    stack1: "NextJS",
+    stack2: "ReactJS",
+    stack3: "Typescript",
     stack4: "Javascript",
+    url: "https://polluxchain.com/",
+  },
+ {
+    img: sulanaImg,
+    title: "Sulaana ",
+    subtitle: "Defi",
+    description:
+      "Sulaana is a blockchain-powered platform designed to provide comprehensive solutions for cryptocurrency and blockchain-related information. It offers a decentralized encyclopedia-like experience, enabling users to access, contribute, and govern content through AI-enhanced features like article summarization and community-driven content curation. Sulaana is fueled by the Sulaana (SUL) token, which supports platform governance, incentivization, and engagement within the SulaanaDAO.",
+    stack1: "Solidity",
+    stack2: "NodeJS",
+    stack3: "NextJS",
+    stack4: "Typescript",
+    url: "https://sulaana.com/"
+  },
+  {
+    img: sulmineImg,
+    title: "Sulmine  ",
+    subtitle: "Defi",
+    description:
+      "Sulmine is a specialized mining protocol developed on the Sulaana blockchain, designed to enable efficient and secure mining of digital assets. It leverages advanced blockchain technologies to ensure high performance, scalability, and a seamless mining experience. Sulmine focuses on empowering users to maximize their mining potential while maintaining a secure and transparent ecosystem for cryptocurrency mining.",
+      stack1: "Solidity",
+      stack2: "NodeJS",
+      stack3: "NextJS",
+      stack4: "Typescript",
+    url: "https://sulmine.sulaana.com/",
+  },
+  {
+    img: crowdImg,
+    title: "Crowd 1 - MLM Project",
+    subtitle: "Defi",
+    description:
+      "Crowd1 is a decentralized multi-level marketing (MLM) project built on blockchain technology. Users are required to create an ID by setting a minimum token ID, which acts as their unique identifier. Through this setup, users can generate referral income and participate in a reward system based on levels of income,  This approach allows for structured growth and incentivizes community engagement within the platform.",
+    stack1: "Solidity",
+    stack2: "NodeJS",
+    stack3: "ReactJS",
+    stack4: "Javascript",
+    url: "https://crowd1.club/",
   },
   {
     img: polinkImg,
-    title: "Polink",
+    title: "Uvi Wallet",
     subtitle: "Defi",
     description:
-      "Our mission at Rock'n'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.",
+      "Uvi Wallet is a secure, non-custodial, multichain cryptocurrency wallet designed for seamless management of digital assets. Supporting multiple blockchains, it allows users to store, send, and receive a wide range of cryptocurrencies while maintaining full control over their private keys. With its intuitive interface and robust security, Uvi Wallet offers a reliable and versatile solution for interacting with decentralized ecosystems across various networks.",
     stack1: "Solidity",
-    stack2: "React",
-    stack3: "Flutter",
-    stack4: "Javascript",
+    stack2: "NodeJS",
+    stack3: "Kotlin",
+    stack4: "Java",
+    url: "",
   },
-  {
-    img: polinkImg,
-    title: "Polink",
-    subtitle: "Defi",
-    description:
-      "Our mission at Rock'n'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.",
-    stack1: "Solidity",
-    stack2: "React",
-    stack3: "Flutter",
-    stack4: "Javascript",
-  },
+ 
 ];
 
 type CardProps = {
@@ -63,6 +97,7 @@ type CardProps = {
   stack2: string;
   stack3: string;
   stack4: string;
+  url: string;
 };
 
 const Card: React.FC<CardProps> = ({
@@ -74,6 +109,7 @@ const Card: React.FC<CardProps> = ({
   stack2,
   stack3,
   stack4,
+  url
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -92,17 +128,17 @@ const Card: React.FC<CardProps> = ({
             alt="banner-image"
             width={0}
             height={0}
-            style={{ width: "10%" }} // Set default width to 100% for mobile
+            style={{ width: "8%" }} // Set default width to 100% for mobile
             className="rounded-2xl w-full " // Use Tailwind's responsive width utilities
           />
 
-          <p className="text-white text-lg md:text-xl font-medium text-nowrap">
+          <p className="text-white text-md md:text-xl font-medium text-nowrap">
             {title}
           </p>
         </div>
         {/* Arrow */}
         <div className="flex justify-end w-full md:w-auto">
-          <p className="text-black bg-green-gradient rounded-md px-4 py-1 flex items-center justify-center mt-2 md:mt-0 font-semibold">
+          <p className="text-black bg-green-gradient hover:bg-yellow-gradient rounded-md px-4 py-1 flex items-center justify-center mt-2 md:mt-0 font-semibold">
             {subtitle}
           </p>
         </div>
@@ -139,29 +175,33 @@ const Card: React.FC<CardProps> = ({
         <div>
           <p className="text-white text-[15px]">Technology Stack:</p>
           <div className="flex flex-row items-center space-x-1 lg:space-x-4 mt-2">
-            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
+            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-1 md:px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack1}
             </p>
-            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
+            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-1 md:px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack2}
             </p>
-            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
+            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-1 md:px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack3}
             </p>
-            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
+            <p className="text-lightGray bg-lightblack hover:bg-lightestGreen px-1 md:px-2 py-1 rounded-md text-[12px] lg:text-[15px]">
               {stack4}
             </p>
           </div>
         </div>
 
         <div className="flex md:justify-end w-full md:w-auto ml-3 lg:ml-0 mt-5 md:mt-6 lg:mt-0">
-          <p className="hidden md:block text-black bg-green-gradient rounded-full p-1 items-center justify-center mt-2 md:mt-0">
+          <a href={url}>
+          <p className="hidden md:block text-black bg-green-gradient hover:bg-yellow-gradient rounded-full p-1 items-center justify-center mt-2 md:mt-0">
             <MdArrowOutward size={24} />
           </p>
-
+          </a>
+          
+          <a href={url}>
           <p className="flex md:hidden text-black bg-green-gradient rounded-full p-1 items-center justify-center mt-2 md:mt-0">
             <MdArrowOutward size={16} />
           </p>
+          </a>
         </div>
       </div>
     </div>
@@ -195,13 +235,14 @@ const Projects = () => {
                 stack2={item.stack2}
                 stack3={item.stack3}
                 stack4={item.stack4}
+                url={item.url}
               />
             ))}
           </div>
         ))}
       </div>
 
-      <div className="-mt-10">
+      <div className="-mt-4">
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full">
           <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
           <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>

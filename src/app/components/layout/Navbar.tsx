@@ -91,7 +91,7 @@ const Navbar = () => {
           alt="banner-image"
           width={0}
           height={0}
-          style={{ width: "70%" }}
+          style={{ width: "70%"}}
           className=""
         />
       </div>

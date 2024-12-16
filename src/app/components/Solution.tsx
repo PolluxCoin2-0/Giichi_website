@@ -39,9 +39,9 @@ const data = [
     },
     {
         title: 'Gamify',
-        subtitle: 'Cryptocurrency Development',
+        subtitle: 'Game developnmnet',
         description:
-          'Our mission at Rock\'n\'Block is to pioneer the frontier of DeFi development, creating innovative DeFi solutions that empower businesses worldwide. We are dedicated to driving the evolution of decentralized finance with our DeFi development services, fostering financial inclusivity.',
+          'At Giichi IT Solutions, we specialize in transforming user experiences with our gamification development services. By integrating game-like mechanics into business processes, applications, and platforms, we help enhance engagement, drive user retention, and unlock new revenue streams. Whether its loyalty programs, education platforms, or business applications, our gamification solutions are tailored to captivate and inspire your audience.',
       },
       {
         title: 'AI Solutions',
