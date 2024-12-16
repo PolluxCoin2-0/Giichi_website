@@ -105,24 +105,21 @@ const Work: React.FC = () => {
         <div className="hidden md:block">
           <span className="text-md md:text-lg lg:text-2xl font-bold text-white">How We Work:</span>
           <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-snug mt-4">
-          
-            Bringing Vision to Life through
+          Transforming Ideas into 
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
               {" "}
-              Blockchain Innovation
+              Reality with Blockchain
             </span>
           </p>
         </div>
         <div className="block md:hidden">
           <span className="text-md md:text-lg lg:text-2xl font-bold text-white">How We Work:</span>
           <p className="text-2xl md:text-3xl lg:text-4xl xl:text-5xl font-bold text-white md:leading-snug mt-4">
-          
-            Bringing Vision to Life through
-          
+             Transforming Ideas into 
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen">
               {" "}
-              Blockchain Innovation
+              Reality with Blockchain
             </span>
           </p>
         </div>

@@ -8,6 +8,9 @@ import polluxImg from "../../../public/assests/polluxchain.png";
 import sulanaImg from "../../../public/assests/SulanaLogo.svg";
 import sulmineImg from "../../../public/assests/sulmineLogo.svg";
 import crowdImg from "../../../public/assests/crowdLogo.png";
+import polluxBlackImg from "../../../public/assests/polluxlogowhite.png";
+import akamaiImg from "../../../public/assests/akamai.png";
+import xinfinImg from "../../../public/assests/xinfin.png";
 import Image from "next/image";
 import { StaticImageData } from "next/image";
 import { FiPlusCircle } from "react-icons/fi";
@@ -75,15 +78,15 @@ const data = [
   },
   {
     img: polinkImg,
-    title: "Uvi Wallet",
+    title: "Polink",
     subtitle: "Defi",
     description:
-      "Uvi Wallet is a secure, non-custodial, multichain cryptocurrency wallet designed for seamless management of digital assets. Supporting multiple blockchains, it allows users to store, send, and receive a wide range of cryptocurrencies while maintaining full control over their private keys. With its intuitive interface and robust security, Uvi Wallet offers a reliable and versatile solution for interacting with decentralized ecosystems across various networks.",
+      "A non-custodial wallet designed to securely manage your digital assets while ensuring complete control over your funds. Polink also supports a governance model, allowing users to participate in decision-making within the ecosystem. Experience seamless transactions with PolluxChain's native token and beyond.",
     stack1: "Solidity",
     stack2: "NodeJS",
     stack3: "Kotlin",
     stack4: "Java",
-    url: "",
+    url: "https://chromewebstore.google.com/detail/polink/afeibjjgfjfphjedhdjgbgbhpomolbjm",
   },
  
 ];
@@ -244,6 +247,42 @@ const Projects = () => {
 
       <div className="-mt-4">
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full">
+          <div className="rounded-2xl py-0 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%] flex flex-row justify-center items-center space-x-6">
+          <Image
+            src={polluxBlackImg}
+            alt="banner-image"
+            width={0}
+            height={0}
+            className="w-20" // Use Tailwind's responsive width utilities
+          />
+          <p className="dancing-font text-lightGray text-3xl">PolluxChain</p>
+          </div>
+
+          <div className="rounded-2xl py-0 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%] flex flex-row justify-center items-center space-x-6">
+          <Image
+            src={akamaiImg}
+            alt="banner-image"
+            width={0}
+            height={0}
+            className="w-10" // Use Tailwind's responsive width utilities
+          />
+          <p className="dancing-font text-lightGray text-3xl">Akamai</p>
+          </div>
+          <div className="rounded-2xl py-0 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%] flex flex-row justify-center items-center space-x-6">
+          <Image
+            src={xinfinImg}
+            alt="banner-image"
+            width={0}
+            height={0}
+            className="w-20" // Use Tailwind's responsive width utilities
+          />
+          <p className="dancing-font text-lightGray text-3xl">Xinfin Network</p>
+          </div>
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+        </div>
+
+        {/* <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full mt-5">
+          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
           <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
           <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
           <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
@@ -255,15 +294,7 @@ const Projects = () => {
           <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
           <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
           <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
-          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
-        </div>
-
-        <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full mt-5">
-          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
-          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
-          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
-          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
-        </div>
+        </div> */}
       </div>
     </div>
   );
