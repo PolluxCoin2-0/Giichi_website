@@ -9,6 +9,8 @@ import img1 from "../../../public/assests/polluxchain.png";
 import img2 from "../../../public/assests/SulanaLogo.svg";
 import img3 from "../../../public/assests/akamai.png";
 import img4 from "../../../public/assests/xdc.png";
+import img5 from "../../../public/assests/lbank.png";
+import img6 from "../../../public/assests/coinstore.png";
 // import polluxLogo from "../../../public/assests/polluxlogowhite.png";
 // import sulanaLogo from "../../../public/assests/SulanaLogo.svg";
 // import akamaiLogo from "../../../public/assests/akamai2.png";
@@ -68,7 +70,7 @@ const Partner = () => {
       <div className="carousel-container mt-8 md:mt-16 ">
         <div className="slider-container">
           <Slider ref={sliderRef} {...settings}>
-            {[img1, img2, img3, img4, img1, img2, img3].map((img, index) => (
+            {[img1, img2, img3, img4, img5, img6,  img1, img2, img3].map((img, index) => (
               <div key={index} className="flip-container md:px-2 px-2">
                 <Image
                   src={img}
