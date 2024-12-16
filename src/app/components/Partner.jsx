@@ -5,10 +5,14 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import dynamic from "next/dynamic";
 import Image from "next/image";
-import img1 from "../../../public/assests/download (1).png";
-import img2 from "../../../public/assests/download (2).png";
-import img3 from "../../../public/assests/download.png";
-import img4 from "../../../public/assests/images.png";
+import img1 from "../../../public/assests/polluxchain.png";
+import img2 from "../../../public/assests/SulanaLogo.svg";
+import img3 from "../../../public/assests/akamai.png";
+import img4 from "../../../public/assests/xdc.png";
+// import polluxLogo from "../../../public/assests/polluxlogowhite.png";
+// import sulanaLogo from "../../../public/assests/SulanaLogo.svg";
+// import akamaiLogo from "../../../public/assests/akamai2.png";
+// import xdcLogo from "../../../public/assests/xinfin.png";
 
 
 // Dynamically import React Slick with SSR disabled
@@ -69,7 +73,7 @@ const Partner = () => {
                 <Image
                   src={img}
                   alt={`Image ${index + 1}`}
-                  className="rounded-2xl flip-image w-[30%]"
+                  className="rounded-2xl flip-image w-[25%]"
                 />
               </div>
             ))}

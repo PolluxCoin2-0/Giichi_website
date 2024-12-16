@@ -141,7 +141,7 @@ const Card: React.FC<CardProps> = ({
         </div>
         {/* Arrow */}
         <div className="flex justify-end w-full md:w-auto">
-          <p className="text-black bg-green-gradient hover:bg-yellow-gradient rounded-md px-4 py-1 flex items-center justify-center mt-2 md:mt-0 font-semibold ">
+          <p className="text-black bg-green-gradient hover:bg-yellow-gradient rounded-md px-4 py-1 flex items-center justify-center mt-2 md:mt-0 font-semibold alegreya-font ">
             {subtitle}
           </p>
         </div>
