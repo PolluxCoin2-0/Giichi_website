@@ -1,21 +1,21 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import { PiPhoneCallFill } from "react-icons/pi";
-import GetExpertTalk from "./reusableComp/GetExpertTalk";
+// import GetExpertTalk from "./reusableComp/GetExpertTalk";
 import img from "../../../public/assests/solution_img.png";
 
 const Consultation = () => {
-  const [isQuoteOpen, setIsQuoteOpen] = useState(false);
+  // const [isQuoteOpen, setIsQuoteOpen] = useState(false);
 
-  const handleButtonClick = () => {
-    setIsQuoteOpen(true);
-  };
+  // const handleButtonClick = () => {
+  //   setIsQuoteOpen(true);
+  // };
 
-  const handleClosePopup = () => {
-    setIsQuoteOpen(false);
-  };
+  // const handleClosePopup = () => {
+  //   setIsQuoteOpen(false);
+  // };
 
   return (
     <div className="px-4 md:px-8 lg:px-16 xl:px-48 mt-12 pb-8">
@@ -41,8 +41,10 @@ const Consultation = () => {
                 "0 2px 20px rgba(0, 0, 0, 0.4), inset 0 0 10px rgba(255, 255, 255, 0.4) ",
             }}
             className={`inline-flex flex-row items-center space-x-3 md:space-x-6 border-[1px] rounded-full p-3 pl-4 md:pl-10 pr-2 md:pr-4 mt-6
-             ${isQuoteOpen ? "z-0" : "z-10"}`}
-            onClick={handleButtonClick}
+           
+             `}
+             //  ${isQuoteOpen ? "z-0" : "z-10"}
+            // onClick={handleButtonClick}
           >
             <p className=" text-white text-sm lg:text-lg font-semibold text-nowrap">
               Talk to Blockchain Expert
@@ -53,9 +55,9 @@ const Consultation = () => {
           </div>
         </div>
 
-        {isQuoteOpen && (
+        {/* {isQuoteOpen && (
           <GetExpertTalk onClose={handleClosePopup} className="z-50" />
-        )}
+        )} */}
 
         <div className="w-full md:w-[40%] mt-12 md:mt-0">
           <Image src={img} alt="" style={{ width: "100%" }} className="" />

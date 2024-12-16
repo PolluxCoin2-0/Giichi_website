@@ -19,21 +19,21 @@ const HomePage = () => {
       ></div>
 
       {/* intro */}
-      <div className="flex flex-col md:flex-row w-full items-center justify-between animate-blurToVisible">
-      <div className=" flex flex-col space-y-4 md:space-y-6 lg:space-y-10  ">
-        <p className="block md:hidden lg:block text-2xl md:text-xl lg:text-4xl 2xl:text-5xl font-bold md:leading-tight text-white">
+      <div className="flex flex-col md:flex-row w-full items-center justify-between animate-blurToVisible ">
+      <div className="w-full md:w-[60%] flex flex-col space-y-4 md:space-y-6 lg:space-y-10  ">
+        <p className="block md:hidden lg:block text-2xl md:text-xl lg:text-4xl 2xl:text-6xl font-bold md:leading-tight text-white">
           Unlock the potential of <br />
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> WEB3 Industry</span>  with <br />
           expert professional
         </p>
 
         <p className="hidden md:block lg:hidden text-2xl md:text-3xl lg:text-7xl font-bold md:leading-tight text-white">
-        Unlock the potential of 
+        Unlock the potential of <br/> 
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-green to-lightgreen"> WEB3 Industry</span>  with <br />
           expert professional
         </p>
         <p className="text-sm lg:text-lg font-medium text-white w-full md:w-[70%] ">
-        Step into the future with Giichi IT Solutions – your trusted hub for cutting-edge blockchain expertise and innovation.
+        Step into the future with Giichi IT Solutions – <br/>your trusted hub for cutting-edge blockchain <br/>expertise and innovation.
 
         </p>
 
@@ -99,14 +99,14 @@ const HomePage = () => {
       </div>
       */}
 
-      <div className=" w-[80%] mt-5 mr-0 md:-mr-40">
+      <div className="w-full md:w-[40%] mt-5 ">
         <div className="flex justify-center items-center md:justify-normal "> 
       <Image
               src={mainMobileImg}
               alt="banner-image"
               width={0}
               height={0}
-              style={{ width: "70%" }} // Set default width to 100% for mobile
+              style={{ width: "80%" }} // Set default width to 100% for mobile
               className="" // Use Tailwind's responsive width utilities
             />
             </div>
