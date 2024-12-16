@@ -37,7 +37,7 @@ const data = [
     stack1: "NextJS",
     stack2: "ReactJS",
     stack3: "Typescript",
-    stack4: "Javascript",
+    stack4: "Solidity",
     url: "https://polluxchain.com/",
   },
  {
