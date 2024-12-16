@@ -247,7 +247,7 @@ const Projects = () => {
 
       <div className="-mt-4">
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full">
-          <div className="rounded-2xl py-0 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%] flex flex-row justify-center items-center space-x-6">
+          <div className="rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen w-full md:w-[33%] flex flex-row justify-center items-center space-x-6">
           <Image
             src={polluxBlackImg}
             alt="banner-image"
@@ -258,7 +258,7 @@ const Projects = () => {
           <p className="dancing-font text-lightGray text-3xl">PolluxChain</p>
           </div>
 
-          <div className="rounded-2xl py-0 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%] flex flex-row justify-center items-center space-x-6">
+          <div className="rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen w-full md:w-[33%] flex flex-row justify-center items-center space-x-6 ">
           <Image
             src={akamaiImg}
             alt="banner-image"
@@ -268,7 +268,7 @@ const Projects = () => {
           />
           <p className="dancing-font text-lightGray text-3xl">Akamai</p>
           </div>
-          <div className="rounded-2xl py-0 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%] flex flex-row justify-center items-center space-x-6">
+          <div className="rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen w-full md:w-[33%] flex flex-row justify-center items-center space-x-6 ">
           <Image
             src={xinfinImg}
             alt="banner-image"
@@ -278,7 +278,7 @@ const Projects = () => {
           />
           <p className="dancing-font text-lightGray text-3xl">Xinfin Network</p>
           </div>
-          <p className="rounded-2xl py-10 px-2 md:px-4 bg-lightestGreen w-full md:w-[25%]"></p>
+         
         </div>
 
         {/* <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full mt-5">
