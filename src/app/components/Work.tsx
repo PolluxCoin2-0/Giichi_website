@@ -63,7 +63,7 @@ const Work: React.FC = () => {
   const PreviousArrow: React.FC<ArrowProps> = ({ onClick }) => {
     return (
       <div
-        className="slider-arrow slider-arrow-left absolute -top-6 md:-top-16 right-16 flex items-center justify-center space-x-2 hover:bg-green-gradient p-2 rounded-full"
+        className="slider-arrow slider-arrow-left absolute -top-4 md:-top-16 right-16 flex items-center justify-center space-x-2 hover:bg-green-gradient p-2 rounded-full"
         onClick={onClick}
       >
         <FaArrowLeft className="slider-arrow-icon text-white" size={20}/>
@@ -74,7 +74,7 @@ const Work: React.FC = () => {
   const NextArrow: React.FC<ArrowProps> = ({ onClick }) => {
     return (
       <div
-        className="slider-arrow slider-arrow-right absolute  -top-6 md:-top-16 right-4 flex items-center justify-center hover:bg-green-gradient p-2 rounded-full"
+        className="slider-arrow slider-arrow-right absolute  -top-4 md:-top-16 right-4 flex items-center justify-center hover:bg-green-gradient p-2 rounded-full"
         onClick={onClick}
       >
         <FaArrowRight className="slider-arrow-icon text-white" size={20}/>

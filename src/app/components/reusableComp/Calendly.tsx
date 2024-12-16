@@ -1,5 +1,4 @@
 import Script from 'next/script';
-import { PiPhoneCallFill } from 'react-icons/pi';
 
 export default function CalendlyButton() {
   function handleClick() {
