@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../../src/app/components/Button";
-import mainMobileImg from "../../../public/assests/heroImg.svg"
+import mainMobileImg from "../../../public/assests/heroImg.svg";
 // import mainImg1 from "../../../public/assests/mainImg1.png";
 // import mainImg2 from "../../../public/assests/mainImg2.png";
 // import mainImg3 from "../../../public/assests/mainImg3.png";
