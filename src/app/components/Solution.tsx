@@ -1,4 +1,6 @@
-import React from 'react'
+'use client'
+import React, { useState } from 'react'
+import { FiMinusCircle, FiPlusCircle } from 'react-icons/fi';
 import { MdArrowOutward } from "react-icons/md";
 const data = [
     {
@@ -58,7 +60,14 @@ const data = [
   };
   
 
-  const Card: React.FC<CardProps> = ({ title, subtitle, description }) => {    return (
+  const Card: React.FC<CardProps> = ({ title, subtitle, description }) => {
+    const [isExpanded, setIsExpanded] = useState(false);
+    
+      const toggleDescription = () => {
+        setIsExpanded(!isExpanded);
+      };
+        return (
+    
     <div className="w-full md:w-[50%] rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack font-medium">
     {/* Wrapper for Title, Subtitle, and Arrow */}
     <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
@@ -78,9 +87,26 @@ const data = [
     </div>
   
     {/* Description */}
-    <p className="text-lightGray text-[15px] md:text-[17px] font-medium leading-snug py-4">
+    <p className="text-lightGray text-[15px] md:text-[17px] font-medium leading-snug py-4"
+      style={{
+        maxHeight: isExpanded ? "none" : "3.6em", // Adjust height for 2 lines (line-height × 2)
+        overflow: "hidden",
+      }}>
       {description}
     </p>
+     {/* Toggle "View More" / "View Less" */}
+          <div className="flex justify-between items-center">
+            <button
+              onClick={toggleDescription}
+              className="text-orange font-medium leading-snug py-4 text-justify"
+            >
+              {isExpanded ? (
+                <FiMinusCircle size={24} />
+              ) : (
+                <FiPlusCircle size={24} />
+              )}
+            </button>
+          </div>
   </div>
   
     );
