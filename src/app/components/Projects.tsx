@@ -247,7 +247,7 @@ const Projects = () => {
 
       <div className="-mt-4">
         <div className="flex flex-col md:flex-row space-x-0 md:space-x-5 space-y-5 md:space-y-0 w-full">
-          <div className="rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen w-full md:w-[33%] flex flex-row justify-center items-center space-x-6">
+          <div className="rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack w-full md:w-[33%] flex flex-row justify-center items-center space-x-6">
           <Image
             src={polluxBlackImg}
             alt="banner-image"
@@ -255,10 +255,10 @@ const Projects = () => {
             height={0}
             className="w-20" // Use Tailwind's responsive width utilities
           />
-          <p className="dancing-font text-lightGray text-3xl">PolluxChain</p>
+          <p className="dancing-font text-lightGray text-2xl md:text-3xl">PolluxChain</p>
           </div>
 
-          <div className="rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen w-full md:w-[33%] flex flex-row justify-center items-center space-x-6 ">
+          <div className="rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack w-full md:w-[33%] flex flex-row justify-center items-center space-x-6 ">
           <Image
             src={akamaiImg}
             alt="banner-image"
@@ -266,9 +266,9 @@ const Projects = () => {
             height={0}
             className="w-10" // Use Tailwind's responsive width utilities
           />
-          <p className="dancing-font text-lightGray text-3xl">Akamai</p>
+          <p className="dancing-font text-lightGray text-2xl md:text-3xl">Akamai</p>
           </div>
-          <div className="rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen w-full md:w-[33%] flex flex-row justify-center items-center space-x-6 ">
+          <div className="rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack w-full md:w-[33%] flex flex-row justify-center items-center space-x-6 ">
           <Image
             src={xinfinImg}
             alt="banner-image"
@@ -276,7 +276,7 @@ const Projects = () => {
             height={0}
             className="w-20" // Use Tailwind's responsive width utilities
           />
-          <p className="dancing-font text-lightGray text-3xl">Xinfin Network</p>
+          <p className="dancing-font text-lightGray text-2xl md:text-3xl">Xinfin Network</p>
           </div>
          
         </div>
