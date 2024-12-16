@@ -2,7 +2,7 @@ import Script from 'next/script';
 
 export default function CalendlyButton() {
   function handleClick() {
-    // @ts-ignore
+    // @ts-expect-error to add calendly window popup
     window.Calendly.initPopupWidget({
       url: 'https://calendly.com/priyanshu_pollux/30min',
     });
