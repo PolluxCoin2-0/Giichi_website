@@ -11,10 +11,7 @@ import img3 from "../../../public/assests/akamai.png";
 import img4 from "../../../public/assests/xdc.png";
 import img5 from "../../../public/assests/lbank.png";
 import img6 from "../../../public/assests/coinstore.png";
-// import polluxLogo from "../../../public/assests/polluxlogowhite.png";
-// import sulanaLogo from "../../../public/assests/SulanaLogo.svg";
-// import akamaiLogo from "../../../public/assests/akamai2.png";
-// import xdcLogo from "../../../public/assests/xinfin.png";
+
 
 
 // Dynamically import React Slick with SSR disabled
@@ -67,7 +64,7 @@ const Partner = () => {
         </span>{" "}
         - Collaborating <br /> for Collective Progress
       </p> */}
-      <div className="carousel-container mt-8 md:mt-16 ">
+      <div className="hidden md:block carousel-container mt-8 md:mt-16 ">
         <div className="slider-container">
           <Slider ref={sliderRef} {...settings}>
             {[img1, img2, img3, img4, img5, img6,  img1, img2, img3].map((img, index) => (
@@ -76,6 +73,31 @@ const Partner = () => {
                   src={img}
                   alt={`Image ${index + 1}`}
                   className="rounded-2xl flip-image w-[25%]"
+                />
+              </div>
+            ))}
+          </Slider>
+          {/*
+            <button className="slick-prev" onClick={goToPrevious}>
+            Prev
+          </button>
+          <button className="slick-next" onClick={goToNext}>
+            Next
+          </button>
+            */}
+          
+        </div>
+      </div>
+
+      <div className="block md:hidden carousel-container mt-8 md:mt-16 ">
+        <div className="slider-container">
+          <Slider ref={sliderRef} {...settings}>
+            {[img1, img2, img3, img4, img5, img6,  img1, img2, img3].map((img, index) => (
+              <div key={index} className="flip-container md:px-2 px-2">
+                <Image
+                  src={img}
+                  alt={`Image ${index + 1}`}
+                  className="rounded-2xl flip-image w-[50%]"
                 />
               </div>
             ))}
