@@ -31,7 +31,7 @@ const data = [
   {
     img: polluxImg,
     title: "Polluxchain",
-    subtitle: "Dex",
+    subtitle: "CHAIN",
     description:
       "PolluxChain is a hybrid Layer 1 blockchain designed to provide scalable, efficient, and decentralized solutions for developers, businesses, and users. It supports advanced features such as concentrated liquidity, seamless DeFi applications, and token interoperability while enabling fast, secure, and low-cost transactions",
     stack1: "NextJS",
@@ -43,7 +43,7 @@ const data = [
  {
     img: sulanaImg,
     title: "Sulaana ",
-    subtitle: "Defi",
+    subtitle: "CRYPTO",
     description:
       "Sulaana is a blockchain-powered platform designed to provide comprehensive solutions for cryptocurrency and blockchain-related information. It offers a decentralized encyclopedia-like experience, enabling users to access, contribute, and govern content through AI-enhanced features like article summarization and community-driven content curation. Sulaana is fueled by the Sulaana (SUL) token, which supports platform governance, incentivization, and engagement within the SulaanaDAO.",
     stack1: "Solidity",
@@ -55,7 +55,7 @@ const data = [
   {
     img: sulmineImg,
     title: "Sulmine  ",
-    subtitle: "Defi",
+    subtitle: "MLM",
     description:
       "Sulmine is a specialized mining protocol developed on the Sulaana blockchain, designed to enable efficient and secure mining of digital assets. It leverages advanced blockchain technologies to ensure high performance, scalability, and a seamless mining experience. Sulmine focuses on empowering users to maximize their mining potential while maintaining a secure and transparent ecosystem for cryptocurrency mining.",
       stack1: "Solidity",
@@ -66,8 +66,8 @@ const data = [
   },
   {
     img: crowdImg,
-    title: "Crowd 1 - MLM Project",
-    subtitle: "Defi",
+    title: "Crowd 1",
+    subtitle: "MLM",
     description:
       "Crowd1 is a decentralized multi-level marketing (MLM) project built on blockchain technology. Users are required to create an ID by setting a minimum token ID, which acts as their unique identifier. Through this setup, users can generate referral income and participate in a reward system based on levels of income,  This approach allows for structured growth and incentivizes community engagement within the platform.",
     stack1: "Solidity",
@@ -79,7 +79,7 @@ const data = [
   {
     img: polinkImg,
     title: "Polink",
-    subtitle: "Defi",
+    subtitle: "DEFI",
     description:
       "A non-custodial wallet designed to securely manage your digital assets while ensuring complete control over your funds. Polink also supports a governance model, allowing users to participate in decision-making within the ecosystem. Experience seamless transactions with PolluxChain's native token and beyond.",
     stack1: "Solidity",
@@ -141,7 +141,7 @@ const Card: React.FC<CardProps> = ({
         </div>
         {/* Arrow */}
         <div className="flex justify-end w-full md:w-auto">
-          <p className="text-black bg-green-gradient hover:bg-yellow-gradient rounded-md px-4 py-1 flex items-center justify-center mt-2 md:mt-0 font-semibold">
+          <p className="text-black bg-green-gradient hover:bg-yellow-gradient rounded-md px-4 py-1 flex items-center justify-center mt-2 md:mt-0 font-semibold ">
             {subtitle}
           </p>
         </div>

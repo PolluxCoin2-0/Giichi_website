@@ -1,18 +1,16 @@
 "use client";
-
 import React from "react";
 import Image from "next/image";
 import { PiPhoneCallFill } from "react-icons/pi";
-// import GetExpertTalk from "./reusableComp/GetExpertTalk";
 import img from "../../../public/assests/solution_img.png";
+import CalendlyButton from "./reusableComp/Calendly";
+// import GetExpertTalk from "./reusableComp/GetExpertTalk";
 
 const Consultation = () => {
   // const [isQuoteOpen, setIsQuoteOpen] = useState(false);
-
   // const handleButtonClick = () => {
   //   setIsQuoteOpen(true);
   // };
-
   // const handleClosePopup = () => {
   //   setIsQuoteOpen(false);
   // };
@@ -45,10 +43,7 @@ const Consultation = () => {
              `}
              //  ${isQuoteOpen ? "z-0" : "z-10"}
             // onClick={handleButtonClick}
-          >
-            <p className=" text-white text-sm lg:text-lg font-semibold text-nowrap">
-              Talk to Blockchain Expert
-            </p>
+          ><CalendlyButton/>
             <p className="bg-green-gradient rounded-full p-2">
               <PiPhoneCallFill size={20} />
             </p>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaFacebookF } from "react-icons/fa";
+import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { ImInstagram } from "react-icons/im";
@@ -96,26 +96,37 @@ const Footer = () => {
             Follow Us On Social Media
           </p>
           <div className="flex flex-row justify-between space-x-0 md:space-x-5 pt-6">
-            <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon">
-              <FaFacebookF size={24} />
-            </p>
-            <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon">
+            <a href="https://x.com/Polluxchain" target="_blank">
+            <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon cursor-pointer">
               <FaXTwitter size={24} />
             </p>
-            <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon">
+            </a>
+
+            <a href="https://www.linkedin.com/company/polluxchain/" target="_blank">
+            <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon cursor-pointer">
               <FaLinkedinIn size={24} />
             </p>
-            <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon">
+            </a>
+
+            <a  href="https://www.instagram.com/polluxchainofficial/" target="_blank">
+            <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon cursor-pointer">
               <ImInstagram size={24} />
             </p>
+            </a>
+            
+            <a  href="https://t.me/polluxchainDAO" target="_blank">
+            <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon cursor-pointer">
+              <FaTelegramPlane size={24} />
+            </p>
+            </a>
           </div>
 
           <p className="text-[#ffffff] text-md md:text-lg font-bold pt-7">
-            Business Enquiry: +91 93845 87998
+            Business Enquiry: +91 9252552665
           </p>
-          <p className="text-[#ffffff] text-md md:text-lg x font-bold pt-6">
+          {/* <p className="text-[#ffffff] text-md md:text-lg x font-bold pt-6">
             For Job: +91 93614 23585
-          </p>
+          </p> */}
         </div>
       </div>
 
