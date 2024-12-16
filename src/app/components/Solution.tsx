@@ -87,7 +87,7 @@ const data = [
     </div>
   
     {/* Description */}
-    <p className="text-lightGray text-[15px] md:text-[17px] font-medium leading-snug py-4"
+    <p className="text-lightGray text-[15px] md:text-[17px] font-medium leading-snug py-4 alegreya-font"
       style={{
         maxHeight: isExpanded ? "none" : "3.6em", // Adjust height for 2 lines (line-height × 2)
         overflow: "hidden",

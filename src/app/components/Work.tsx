@@ -139,7 +139,7 @@ const Work: React.FC = () => {
                     </div>
                     <div className="w-full lg:w-[85%]">
                       <p className="text-2xl font-medium">{item.title}</p>
-                      <p className="text-sm lg:text-[15px] mt-4">
+                      <p className="text-[15px] md:text-[17px] font-medium text-lightGray mt-4 alegreya-font">
                         {item.description}
                       </p>
                     </div>

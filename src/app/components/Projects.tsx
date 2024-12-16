@@ -150,7 +150,7 @@ const Card: React.FC<CardProps> = ({
       {/* Description */}
       <div className="flex flex-row">
         <p
-          className="text-lightGray text-[15px] font-medium leading-snug py-4 w-full transition-all duration-300"
+          className="text-lightGray text-[15px] md:text-[17px] font-medium leading-snug py-4 w-full transition-all duration-300 alegreya-font"
           style={{
             maxHeight: isExpanded ? "none" : "3.6em", // Adjust height for 2 lines (line-height × 2)
             overflow: "hidden",
