@@ -1,14 +1,14 @@
 import HomePage from "./components/HomePage";
 import Partner from "./components/Partner";
 import Solution from "./components/Solution";
-// import Blog from "./components/Blog";
-// import Testimonials from "./components/Testimonials";
 import Consultation from "./components/Consultation";
 import Projects from "./components/Projects";
 import Work from "./components/Work";
 // import About from "./components/About";
 // import Services from "./components/Services";
-//  import Portfolio from "./components/Portfolio/page";
+// import Portfolio from "./components/Portfolio/page";
+// import Blog from "./components/Blog";
+// import Testimonials from "./components/Testimonials";
 
 export default function Home() {
   
@@ -18,14 +18,13 @@ export default function Home() {
       <Partner /> 
       <Solution />
       <Projects />
-      {/* <Testimonials /> */}
       <Work/>
-      {/* <Blog /> */}
       <Consultation />
       {/* <About /> */}
       {/* <Services /> */}
       {/* <Portfolio /> */}
-     
+      {/* <Blog /> */}
+      {/* <Testimonials /> */}
     </div>
   );
 }
