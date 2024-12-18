@@ -61,7 +61,7 @@ const HomePage = () => {
               alt="banner-image"
               width={0}
               height={0}
-              style={{ width: "90%" }} // Set default width to 100% for mobile
+              style={{ width: "80%" }} // Set default width to 100% for mobile
               className="animate-bounceVertically" // Use Tailwind's responsive width utilities
             />
             </div>
