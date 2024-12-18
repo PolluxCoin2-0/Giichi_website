@@ -36,6 +36,19 @@ export const metadata: Metadata = {
       },
     ],
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Giichi IT Solutions Pvt. Ltd. - Digital Innovation, Web3 & Blockchain, AI, and Application Development",
+    description:
+      "Giichi IT Solutions is a global leader in Digital Transformation, specializing in Web3, Blockchain, AI, Application Development, UI/UX Design, and Enterprise Solutions.",
+    images: [
+      {
+        url: "https://giichi.network/Giichilogo.png", // Replace with your actual logo or image URL
+        alt: "Giichi IT Solutions Logo",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
