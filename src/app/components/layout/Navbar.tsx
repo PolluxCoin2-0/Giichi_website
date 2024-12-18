@@ -485,7 +485,7 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu Toggle */}
-      <div className="lg:hidden z-20">
+      <div className="lg:hidden z-30 ">
         {isMenuOpen ? (
           <RiCloseLargeFill
             className="text-white text-2xl cursor-pointer mt-3"
@@ -502,7 +502,7 @@ const Navbar = () => {
       {/* Mobile Navigation Menu */}
       {isMenuOpen && (
         <div
-          className="absolute top-0 left-0 w-full bg-black p-6 lg:hidden z-10 min-h-screen"
+          className="absolute top-0 left-0 w-full bg-black p-6 lg:hidden z-20 min-h-screen"
           style={{
             boxShadow: "0 2px 20px rgba(0, 0, 0, 0.8)",
           }}
