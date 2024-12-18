@@ -68,7 +68,7 @@ const data = [
       };
         return (
     
-    <div className="w-full md:w-[50%] rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack font-medium">
+    <div className="w-full md:w-[50%] rounded-2xl py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack font-medium hover:border-t-2 hover:border-l-2 border-lightgreen">
     {/* Wrapper for Title, Subtitle, and Arrow */}
     <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
       {/* Title and Subtitle */}

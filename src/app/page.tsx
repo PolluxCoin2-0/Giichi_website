@@ -13,10 +13,12 @@ import Work from "./components/Work";
 // import Testimonials from "./components/Testimonials";
 
 export default function Home() {
+ 
 
   // Render the actual content once `loading` is false
   return (
     <div className="home-container">
+      
       <HomePage />
       <Partner />
       <Solution />

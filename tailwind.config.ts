@@ -73,13 +73,14 @@ export default {
           "0%": { opacity: "0", filter: "blur(10px)" },
           "100%": { opacity: "1", filter: "blur(0px)" },
         },
+        
       },
       animation: {
         marquee: "scroll 20s linear infinite", // Animation duration and speed
         scaleUp: "scaleUp 8s ease-in-out infinite", // Animates smoothly in a loop
         scaleDown: "scaleDown 8s ease-in-out infinite", // New scale-down animation
         rotate360: "rotate360 50s linear infinite",
-        bounceVertically: "bounceVertically 3s ease-in-out infinite", // Bounce animation
+        bounceVertically: "bounceVertically 6s ease-in-out infinite", // Bounce animation
         slideInLeft: "slideInLeft 1s ease-out",
         slideInRight: "slideInRight 1s ease-out",
         blurToVisible: "blurToVisible 1.5s ease-out", // Adjust duration and easing as desired

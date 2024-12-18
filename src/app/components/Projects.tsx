@@ -121,7 +121,7 @@ const Card: React.FC<CardProps> = ({
   };
 
   return (
-    <div className="w-full md:w-[50%] rounded-2xl py-2 md:py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack font-medium">
+    <div className="w-full md:w-[50%] rounded-2xl py-2 md:py-5 px-2 md:px-4 bg-lightestGreen hover:bg-lightblack font-medium ">
       {/* Wrapper for Title, Subtitle, and Arrow */}
       <div className="flex flex-row items-center justify-between">
         {/* Title and Subtitle */}
