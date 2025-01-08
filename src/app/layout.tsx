@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: 'https://giichi.network/',
     images: [
       {
-        url: 'https://giichi.network/logo.svg', // Full URL for the image
+        url: 'https://giichi.network/Giichilogo.png', // Full URL for the image
         width: 1200,
         height: 630,
         alt: 'Digital Innovation, Web3 & Blockchain, AI, and Application Development',
