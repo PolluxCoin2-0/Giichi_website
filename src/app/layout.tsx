@@ -4,7 +4,7 @@ import Navbar from "../../src/app/components/layout/Navbar";
 import Footer from "../../src/app/components/layout/Footer";
 import "./globals.css";
 import ClientLoaderWrapper from "./ClientLoaderWrapper";
-
+// import giichiLogo from "../../public/assests/Giichilogo.png";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     url: 'https://giichi.network/',
     images: [
       {
-        url: 'https://giichi.network/Giichilogo.png', // Full URL for the image
+        url: '/assets/Giichilogo.png', // Full URL for the image
         width: 1200,
         height: 630,
         alt: 'Digital Innovation, Web3 & Blockchain, AI, and Application Development',
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
       "Giichi IT Solutions is a global leader in Digital Transformation, specializing in Web3, Blockchain, AI, Application Development, UI/UX Design, and Enterprise Solutions.",
     images: [
       {
-        url: "https://giichi.network/Giichilogo.png", // Replace with your actual logo or image URL
+        url: "/assets/Giichilogo.png", // Replace with your actual logo or image URL
         alt: "Giichi IT Solutions Logo",
       },
     ],
