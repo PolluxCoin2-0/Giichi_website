@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import GiichiLogo from "../../../../public/assests/logo-light.png";
+import GiichiLogo from "../../../../public/assests/logo1.png";
 import { RiMenu3Line, RiCloseLargeFill } from "react-icons/ri";
 import { CgMenuLeft } from "react-icons/cg";
 import { FiPlusCircle, FiMinusCircle } from "react-icons/fi";

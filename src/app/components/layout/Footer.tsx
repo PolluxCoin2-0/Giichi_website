@@ -3,7 +3,7 @@ import { FaTelegramPlane } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa";
 import { ImInstagram } from "react-icons/im";
-import GiichiLightLogo from "../../../../public/assests/logo-light.png";
+import GiichiLightLogo from "../../../../public/assests/logo1.png";
 import { HiHomeModern } from "react-icons/hi2";
 
 const Footer = () => {
@@ -96,25 +96,25 @@ const Footer = () => {
             Follow Us On Social Media
           </p>
           <div className="flex flex-row justify-between space-x-0 md:space-x-5 pt-6">
-            <a href="https://x.com/Polluxchain" target="_blank">
+            <a href="https://x.com/GiichiPvt?t=7FutgqPG6G_2umfDR53SgQ&s=09" target="_blank">
             <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon cursor-pointer">
               <FaXTwitter size={24} />
             </p>
             </a>
 
-            <a href="https://www.linkedin.com/company/polluxchain/" target="_blank">
+            <a href="https://www.linkedin.com/company/giichi-it-solution/" target="_blank">
             <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon cursor-pointer">
               <FaLinkedinIn size={24} />
             </p>
             </a>
 
-            <a  href="https://www.instagram.com/polluxchainofficial/" target="_blank">
+            <a  href="https://www.instagram.com/giichi_it_solutions?igsh=MWhhY3RpMmtpeHBveA==" target="_blank">
             <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon cursor-pointer">
               <ImInstagram size={24} />
             </p>
             </a>
             
-            <a  href="https://t.me/polluxchainDAO" target="_blank">
+            <a  href="" target="_blank">
             <p className="bg-green-gradient px-3 py-3 rounded-full animated-icon cursor-pointer">
               <FaTelegramPlane size={24} />
             </p>
